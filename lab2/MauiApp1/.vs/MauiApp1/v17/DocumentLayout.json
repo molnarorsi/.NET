@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\lab2\\MauiApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D023F46-EB02-49DC-9ECA-58687D759F17}|MauiApp1.csproj|d:\\university\\negyedev\\masodik felev\\.net\\lab2\\mauiapp1\\page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8D023F46-EB02-49DC-9ECA-58687D759F17}|MauiApp1.csproj|solutionrelative:page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D023F46-EB02-49DC-9ECA-58687D759F17}|MauiApp1.csproj|d:\\university\\negyedev\\masodik felev\\.net\\lab2\\mauiapp1\\page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D023F46-EB02-49DC-9ECA-58687D759F17}|MauiApp1.csproj|solutionrelative:page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D023F46-EB02-49DC-9ECA-58687D759F17}|MauiApp1.csproj|d:\\university\\negyedev\\masodik felev\\.net\\lab2\\mauiapp1\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D023F46-EB02-49DC-9ECA-58687D759F17}|MauiApp1.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D023F46-EB02-49DC-9ECA-58687D759F17}|MauiApp1.csproj|d:\\university\\negyedev\\masodik felev\\.net\\lab2\\mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8D023F46-EB02-49DC-9ECA-58687D759F17}|MauiApp1.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Page.xaml.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\lab2\\MauiApp1\\Page.xaml.cs",
+              "RelativeDocumentMoniker": "Page.xaml.cs",
+              "ToolTip": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\lab2\\MauiApp1\\Page.xaml.cs",
+              "RelativeToolTip": "Page.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T13:55:19.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Page.xaml",
+              "DocumentMoniker": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\lab2\\MauiApp1\\Page.xaml",
+              "RelativeDocumentMoniker": "Page.xaml",
+              "ToolTip": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\lab2\\MauiApp1\\Page.xaml",
+              "RelativeToolTip": "Page.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-29T13:26:22.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\lab2\\MauiApp1\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\lab2\\MauiApp1\\MainPage.xaml.cs",
+              "RelativeToolTip": "MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T12:51:41.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\lab2\\MauiApp1\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\lab2\\MauiApp1\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-29T12:51:10.693Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

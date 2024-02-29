@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hazi1.UI">
+    <ScrollView>
+        <VerticalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Spacing="20">
+            <Label 
+                Text="Introducing Microsoft.Maui.Graphics.Controls"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start" 
+                FontSize="Large"
+                FontAttributes="Bold"
+            />
+            <Label 
+                Text="A .NET MAUI experiment that offers drawn controls allowing to choose between Cupertino, Fluent and Material."
+                VerticalOptions="Center"
+                HorizontalOptions="Start" />
+            <VerticalStackLayout BackgroundColor="White">
+                <Border Stroke="White" StrokeThickness="2" StrokeShape="Rectangle" Background="LightGray" Padding="10">
+                    <Label
+                        Text="Button"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start"
+                        TextColor="Black"/>
+                </Border>
+                <VerticalStackLayout Padding="10" Spacing="5">
+                    <Label
+                        Text="Button"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start"
+                        FontSize="10"
+                        TextColor="Grey"/>
+                    <Button
+                        Text="Button"
+                        VerticalOptions="Center"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="DarkBlue"/>
+
+                    <Label
+                        Text="Disabled Button"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start"
+                        FontSize="10"
+                        TextColor="Grey"/>
+                    <Button
+                        Text="Disabled Button"
+                        VerticalOptions="Center"
+                        HorizontalOptions="FillAndExpand"
+                        IsEnabled="False"
+                        BackgroundColor="LightGray"/>
+
+                    <Label
+                        Text="Custom Button"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start"
+                        FontSize="10"
+                        TextColor="Grey"/>
+                    <Button
+                        Text="Custom Button"
+                        VerticalOptions="Center"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="Red"
+                        BorderColor="White"
+                        BorderWidth="2"
+                        TextColor="White"/>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+            <VerticalStackLayout BackgroundColor="White">
+                <Border Stroke="White" StrokeThickness="2" StrokeShape="Rectangle" Background="LightGray" Padding="10">
+                    <Label 
+                    Text="CheckBox"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                    TextColor="Black"/>
+                </Border>
+                <VerticalStackLayout Padding="10" Spacing="5">
+                    <Label
+                    Text="Default"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                       FontSize="10"
+                        TextColor="Grey"/>
+                    <CheckBox
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                    IsChecked="True"
+                     Color="DarkBlue"/>
+                    <Label
+                    Text="Disabled"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                        FontSize="10"
+                        TextColor="Grey"/>
+                    <CheckBox
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                    IsChecked="True"
+                    IsEnabled="False"/>
+                    <Label
+                    Text="Custom"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                        FontSize="10"
+                        TextColor="Grey"/>
+                    <CheckBox
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                    Color="Blue"
+                        IsChecked="True"/>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+            <VerticalStackLayout BackgroundColor="White">
+                <Border Stroke="White" StrokeThickness="2" StrokeShape="Rectangle" Background="LightGray" Padding="10">
+                    <Label
+                    Text="DatePicker"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                        TextColor="Black"/>
+                </Border>
+                <VerticalStackLayout Padding="10" Spacing="5">
+                    <Label
+                    Text="Default"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                        FontSize="10"
+                        TextColor="Grey"/>
+                    <DatePicker
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"/>
+                    <Label
+                    Text="Disabled"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                        FontSize="10"
+                        TextColor="Grey"/>
+                    <DatePicker
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                    IsEnabled="False"/>
+                    <Label
+                    Text="Custom"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                        FontSize="10"
+                        TextColor="Grey"/>
+                    <DatePicker
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                    BackgroundColor="Red"
+                    TextColor="White"/>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
