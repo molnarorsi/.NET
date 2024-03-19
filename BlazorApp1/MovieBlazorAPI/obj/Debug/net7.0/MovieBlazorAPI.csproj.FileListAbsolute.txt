@@ -1,0 +1,12 @@
+D:\UNIVERSITY\NEGYEDEV\MASODIK FELEV\.NET\BlazorApp1\MovieBlazorAPI\bin\Debug\net7.0\MovieBlazorAPI.deps.json
+D:\UNIVERSITY\NEGYEDEV\MASODIK FELEV\.NET\BlazorApp1\MovieBlazorAPI\bin\Debug\net7.0\MovieBlazorAPI.dll
+D:\UNIVERSITY\NEGYEDEV\MASODIK FELEV\.NET\BlazorApp1\MovieBlazorAPI\bin\Debug\net7.0\MovieBlazorAPI.pdb
+D:\UNIVERSITY\NEGYEDEV\MASODIK FELEV\.NET\BlazorApp1\MovieBlazorAPI\obj\Debug\net7.0\MovieBlazorAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\UNIVERSITY\NEGYEDEV\MASODIK FELEV\.NET\BlazorApp1\MovieBlazorAPI\obj\Debug\net7.0\MovieBlazorAPI.AssemblyInfoInputs.cache
+D:\UNIVERSITY\NEGYEDEV\MASODIK FELEV\.NET\BlazorApp1\MovieBlazorAPI\obj\Debug\net7.0\MovieBlazorAPI.AssemblyInfo.cs
+D:\UNIVERSITY\NEGYEDEV\MASODIK FELEV\.NET\BlazorApp1\MovieBlazorAPI\obj\Debug\net7.0\MovieBlazorAPI.csproj.CoreCompileInputs.cache
+D:\UNIVERSITY\NEGYEDEV\MASODIK FELEV\.NET\BlazorApp1\MovieBlazorAPI\obj\Debug\net7.0\MovieBlazorAPI.sourcelink.json
+D:\UNIVERSITY\NEGYEDEV\MASODIK FELEV\.NET\BlazorApp1\MovieBlazorAPI\obj\Debug\net7.0\MovieBlazorAPI.dll
+D:\UNIVERSITY\NEGYEDEV\MASODIK FELEV\.NET\BlazorApp1\MovieBlazorAPI\obj\Debug\net7.0\refint\MovieBlazorAPI.dll
+D:\UNIVERSITY\NEGYEDEV\MASODIK FELEV\.NET\BlazorApp1\MovieBlazorAPI\obj\Debug\net7.0\MovieBlazorAPI.pdb
+D:\UNIVERSITY\NEGYEDEV\MASODIK FELEV\.NET\BlazorApp1\MovieBlazorAPI\obj\Debug\net7.0\ref\MovieBlazorAPI.dll
