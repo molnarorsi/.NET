@@ -4,11 +4,7 @@
     using System.Runtime.CompilerServices;
 
     public class ViewModelBase : INotifyPropertyChanged
-    {
-        public ViewModelBase()
-        {
-        }
-
+    { 
         public event PropertyChangedEventHandler PropertyChanged;
 
         public void RaisePropertyChanged([CallerMemberName] string name = null)

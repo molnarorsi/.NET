@@ -1,0 +1,1 @@
+D:\UNIVERSITY\NEGYEDEV\MASODIK FELEV\.NET\Lab4_MVVM_Demo\Lab4_MVVM_Demo\MonkeyFinder\MonkeyFinder.csproj;x64

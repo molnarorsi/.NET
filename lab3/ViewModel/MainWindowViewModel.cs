@@ -3,6 +3,8 @@ using lab3.Model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -13,12 +15,15 @@ namespace lab3.ViewModel
     public class MainWindowViewModel : ViewModelBase
     {
         private ObservableCollection<User> userList;
+
         private User selectedUser;
         public RelayCommand LoadDataCommand { get; set; }
         public RelayCommand ClearListCommand { get; set; }
         public RelayCommand DeleteItemCommand { get; set; }
         public RelayCommand AddItemCommand { get; set; }
         public RelayCommand UpdateCommand { get; set; }
+
+        private AddItemViewModel addItemViewModel = new AddItemViewModel();
 
         public MainWindowViewModel()
         {
@@ -28,11 +33,14 @@ namespace lab3.ViewModel
             this.DeleteItemCommand = new RelayCommand(this.DeleteItemCommandExecute);
             this.AddItemCommand = new RelayCommand(this.AddItemCommandExecute);
             this.UpdateCommand = new RelayCommand(this.UpdateCommandExecute);
+            
+            this.viewModel = new AddItemViewModel();
+            Instance = this;
         }
 
         private void AddItemCommandExecute()
         {
-            AddItemViewModel addItemViewModel = new AddItemViewModel();
+            this.addItemViewModel.NewUser.UserId = this.userList.Count + 1;
             ViewService.ShowDialog(addItemViewModel);
         }
 
@@ -51,7 +59,19 @@ namespace lab3.ViewModel
 
         private void UpdateCommandExecute()
         {
-            
+            if (this.userList.Count > 0)
+            {
+                return;
+            }
+
+            using (StreamWriter writer = new StreamWriter(@"D:\UNIVERSITY\NEGYEDEV\MASODIK FELEV\.NET\lab3\User Data.txt"))
+            {
+                foreach(User user in this.UserList)
+                {
+                    writer.WriteLine(user.ToString());
+                }
+            }
+
         }
 
         private void LoadDataCommandExecute()

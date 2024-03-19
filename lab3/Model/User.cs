@@ -14,5 +14,10 @@ namespace lab3.Model
         public string City { get; set; }
         public string State { get; set; }
         public string Country { get; set; }
+
+        public override string? ToString()
+        {
+            return UserId + "," + FirstName + "," + LastName + "," + City + "," + State + "," + Country;
+        }
     }
 }
