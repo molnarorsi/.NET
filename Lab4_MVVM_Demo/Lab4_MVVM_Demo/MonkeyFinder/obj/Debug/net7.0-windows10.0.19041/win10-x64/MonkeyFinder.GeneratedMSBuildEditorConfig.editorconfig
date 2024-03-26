@@ -8,29 +8,29 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MonkeyFinder
-build_property.ProjectDir = D:\UNIVERSITY\NEGYEDEV\MASODIK FELEV\.NET\Lab4_MVVM_Demo\Lab4_MVVM_Demo\MonkeyFinder\
+build_property.ProjectDir = C:\Users\molna\source\repos\.NET\Lab4_MVVM_Demo\Lab4_MVVM_Demo\MonkeyFinder\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[D:/UNIVERSITY/NEGYEDEV/MASODIK FELEV/.NET/Lab4_MVVM_Demo/Lab4_MVVM_Demo/MonkeyFinder/App.xaml]
+[C:/Users/molna/source/repos/.NET/Lab4_MVVM_Demo/Lab4_MVVM_Demo/MonkeyFinder/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MonkeyFinder.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[D:/UNIVERSITY/NEGYEDEV/MASODIK FELEV/.NET/Lab4_MVVM_Demo/Lab4_MVVM_Demo/MonkeyFinder/AppShell.xaml]
+[C:/Users/molna/source/repos/.NET/Lab4_MVVM_Demo/Lab4_MVVM_Demo/MonkeyFinder/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MonkeyFinder.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[D:/UNIVERSITY/NEGYEDEV/MASODIK FELEV/.NET/Lab4_MVVM_Demo/Lab4_MVVM_Demo/MonkeyFinder/View/DetailsPage.xaml]
+[C:/Users/molna/source/repos/.NET/Lab4_MVVM_Demo/Lab4_MVVM_Demo/MonkeyFinder/View/DetailsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MonkeyFinder.View.DetailsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = View\DetailsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = View\DetailsPage.xaml
 
-[D:/UNIVERSITY/NEGYEDEV/MASODIK FELEV/.NET/Lab4_MVVM_Demo/Lab4_MVVM_Demo/MonkeyFinder/View/MainPage.xaml]
+[C:/Users/molna/source/repos/.NET/Lab4_MVVM_Demo/Lab4_MVVM_Demo/MonkeyFinder/View/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MonkeyFinder.View.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = View\MainPage.xaml

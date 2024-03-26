@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MTq8BFgzhfoyrF/B4Ep3kngS3dLvNc/ABzHZQFlswQeqRnKWWBLojgHKiEzDvX5+ow6yvtytcIOUpvZUjJskbw==",
+  "dgSpecHash": "1Svi+Oq0gTDfWOSCl0akjlTfEWpkdaLEwz90+j2FgR+xZis/i/AdjdP0p+nHeUeU8Gvl+maPPrp83UOdwoKLzw==",
   "success": true,
-  "projectFilePath": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\BlazorApp1\\MovieBlazorAPI\\MovieBlazorAPI.csproj",
+  "projectFilePath": "C:\\Users\\molna\\source\\repos\\.NET\\BlazorApp1\\MovieBlazorAPI\\MovieBlazorAPI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,29 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\",
+  "WorkspaceRootPath": "C:\\Users\\molna\\source\\repos\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|d:\\university\\negyedev\\masodik felev\\.net\\lab4_mvvm_demo\\lab4_mvvm_demo\\monkeyfinder\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|c:\\users\\molna\\source\\repos\\.net\\lab4_mvvm_demo\\lab4_mvvm_demo\\monkeyfinder\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|solutionrelative:monkeyfinder\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|d:\\university\\negyedev\\masodik felev\\.net\\lab4_mvvm_demo\\lab4_mvvm_demo\\monkeyfinder\\view\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|c:\\users\\molna\\source\\repos\\.net\\lab4_mvvm_demo\\lab4_mvvm_demo\\monkeyfinder\\view\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|solutionrelative:monkeyfinder\\view\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|d:\\university\\negyedev\\masodik felev\\.net\\lab4_mvvm_demo\\lab4_mvvm_demo\\monkeyfinder\\viewmodel\\monkeysviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|c:\\users\\molna\\source\\repos\\.net\\lab4_mvvm_demo\\lab4_mvvm_demo\\monkeyfinder\\viewmodel\\monkeysviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|solutionrelative:monkeyfinder\\viewmodel\\monkeysviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|d:\\university\\negyedev\\masodik felev\\.net\\lab4_mvvm_demo\\lab4_mvvm_demo\\monkeyfinder\\view\\detailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|c:\\users\\molna\\source\\repos\\.net\\lab4_mvvm_demo\\lab4_mvvm_demo\\monkeyfinder\\view\\detailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|solutionrelative:monkeyfinder\\view\\detailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|d:\\university\\negyedev\\masodik felev\\.net\\lab4_mvvm_demo\\lab4_mvvm_demo\\monkeyfinder\\viewmodel\\monkeydetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|c:\\users\\molna\\source\\repos\\.net\\lab4_mvvm_demo\\lab4_mvvm_demo\\monkeyfinder\\viewmodel\\monkeydetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|solutionrelative:monkeyfinder\\viewmodel\\monkeydetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|d:\\university\\negyedev\\masodik felev\\.net\\lab4_mvvm_demo\\lab4_mvvm_demo\\monkeyfinder\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|c:\\users\\molna\\source\\repos\\.net\\lab4_mvvm_demo\\lab4_mvvm_demo\\monkeyfinder\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C60F2B1C-790E-4432-A719-52182A333ADE}|MonkeyFinder\\MonkeyFinder.csproj|solutionrelative:monkeyfinder\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -40,9 +40,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "App.xaml",
-              "DocumentMoniker": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\App.xaml",
               "RelativeDocumentMoniker": "MonkeyFinder\\App.xaml",
-              "ToolTip": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\App.xaml",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\App.xaml",
               "RelativeToolTip": "MonkeyFinder\\App.xaml",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAAEQAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -53,66 +53,61 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "DetailsPage.xaml",
-              "DocumentMoniker": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\View\\DetailsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\View\\DetailsPage.xaml",
               "RelativeDocumentMoniker": "MonkeyFinder\\View\\DetailsPage.xaml",
-              "ToolTip": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\View\\DetailsPage.xaml",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\View\\DetailsPage.xaml",
               "RelativeToolTip": "MonkeyFinder\\View\\DetailsPage.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-14T17:21:32.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T17:21:32.587Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainPage.xaml",
-              "DocumentMoniker": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\View\\MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\View\\MainPage.xaml",
               "RelativeDocumentMoniker": "MonkeyFinder\\View\\MainPage.xaml",
-              "ToolTip": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\View\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\View\\MainPage.xaml",
               "RelativeToolTip": "MonkeyFinder\\View\\MainPage.xaml",
               "ViewState": "AQIAAAoAAAAAAAAAAAAcwB0AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-14T17:14:40.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T17:14:40.461Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "MonkeyDetailsViewModel.cs",
-              "DocumentMoniker": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\ViewModel\\MonkeyDetailsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\ViewModel\\MonkeyDetailsViewModel.cs",
               "RelativeDocumentMoniker": "MonkeyFinder\\ViewModel\\MonkeyDetailsViewModel.cs",
-              "ToolTip": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\ViewModel\\MonkeyDetailsViewModel.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\ViewModel\\MonkeyDetailsViewModel.cs",
               "RelativeToolTip": "MonkeyFinder\\ViewModel\\MonkeyDetailsViewModel.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAcwBQAAABXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T16:47:10.781Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T16:47:10.781Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "MauiProgram.cs",
-              "DocumentMoniker": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MonkeyFinder\\MauiProgram.cs",
-              "ToolTip": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\MauiProgram.cs",
               "RelativeToolTip": "MonkeyFinder\\MauiProgram.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAuwB8AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T17:21:11.45Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-12T17:21:11.45Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MonkeysViewModel.cs",
-              "DocumentMoniker": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\ViewModel\\MonkeysViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\ViewModel\\MonkeysViewModel.cs",
               "RelativeDocumentMoniker": "MonkeyFinder\\ViewModel\\MonkeysViewModel.cs",
-              "ToolTip": "D:\\UNIVERSITY\\NEGYEDEV\\MASODIK FELEV\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\ViewModel\\MonkeysViewModel.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Lab4_MVVM_Demo\\Lab4_MVVM_Demo\\MonkeyFinder\\ViewModel\\MonkeysViewModel.cs",
               "RelativeToolTip": "MonkeyFinder\\ViewModel\\MonkeysViewModel.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAIAwwAwAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T17:10:07.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-12T17:10:07.375Z"
             }
           ]
         }

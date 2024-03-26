@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MovieBlazorAPI
-build_property.ProjectDir = D:\UNIVERSITY\NEGYEDEV\MASODIK FELEV\.NET\BlazorApp1\MovieBlazorAPI\
+build_property.ProjectDir = C:\Users\molna\source\repos\.NET\BlazorApp1\MovieBlazorAPI\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
