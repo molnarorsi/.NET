@@ -1,0 +1,371 @@
+﻿@page "/clients"
+
+<PageTitle>Client</PageTitle>
+
+@using FitnessAppApi.Api
+@using FitnessAppApi.Context
+@using FitnessAppApi.Validator
+@using Microsoft.EntityFrameworkCore
+@using FitnessAppApi
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Web
+@using FluentValidation
+@using Syncfusion.Blazor
+@using Syncfusion.Blazor.DropDowns
+
+
+<AuthorizeView Context="authContext">
+    <Authorized>
+        @if (updateSuccess) 
+        {
+            <div class="alert alert-success fade-in" role="alert" style="margin-left:@(loaded ? " 15%" : "0")">Updated successfully!</div>
+        }
+        else if (added)
+        {
+            <div class="alert alert-success fade-in" role="alert" style="margin-left:@(loaded ? " 15%" : "0")">Added successfully!</div>
+        }
+        @if (failed)
+        {
+            <div class="alert alert-danger fade-in" role="alert" style="margin-left:@(loaded ? " 15%" : "0")">Update failed!</div>
+        }
+        @if (loaded)
+        {
+            <div class="alert alert-success fade-in" role="alert">Loaded successfully!</div>
+        }
+        @if (refresh_clicked)
+        {
+            <div class="alert alert-info fade-in" role="alert" style="right: 10px">Loading...</div>
+        }
+
+        <h1>
+            <img src="images/target.png" alt="Client Icon" class="icon" />
+            Clients
+        </h1>
+
+        <EditForm Model="@newClient" OnValidSubmit="@HandleValidSubmit" Context="editFormContext">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            
+            <div class="form-group">
+                <label for="Name">Name:</label>
+                <InputText class="form-control" id="Name" @bind-Value="newClient.Name" placeholder="Client name" />
+            </div>
+            <div class="form-group">
+                <label for="Phone">Phone:</label>
+                <InputText class="form-control" id="Phone" @bind-Value="newClient.Phone" placeholder="+40 XXXXXXXXX"/>
+            </div>
+            <div class="form-group">
+                <label for="Email">Email:</label>
+                <InputText class="form-control" id="Email" @bind-Value="newClient.Email" placeholder="example@domain.com"/>
+            </div>
+            <div class="form-group">
+                <label for="CNP">CNP:</label>
+                <InputText class="form-control" id="CNP" @bind-Value="newClient.CNP" placeholder = "5981458173264"/>
+            </div>
+            <div class="form-group">
+                <label for="Address">Address:</label>
+                <InputText class="form-control" id="Address" @bind-Value="newClient.Address" />
+            </div>
+            <div class="form-group">
+                <label for="Barcode">Barcode:</label>
+                <InputText class="form-control" id="Barcode" @bind-Value="newClient.Barcode" />
+            </div>
+            <div class="form-group">
+                <label for="Notes">Notes:</label>
+                <InputTextArea class="form-control" id="Notes" @bind-Value="newClient.Notes" />
+            </div>
+            <br />
+            <br />
+            @if (addTicket)
+            {
+                <Dropdown TItem="TicketTypes" OnSelected="@OnSelected">
+                    <InitialTip>Select Membership</InitialTip>
+                    <ChildContent>
+                        @foreach (var ticketType in @ticketTypes)
+                        {
+                            <DropdownListItem Item="ticketType">@ticketType.Name</DropdownListItem>
+                        }
+                    </ChildContent>
+                </Dropdown>
+            }
+            @if (myValidator.Validate(newClient).IsValid)
+            {
+                <button class="btn btn-primary submit">@(
+                        itemSelected ? "Update" : "Submit"
+                )</button>
+            }
+            else
+            {
+                <button class="btn btn-primary submit" disabled>Submit</button>
+            }
+            @if (itemSelected)
+            {
+                <button class="btn btn-danger submit" @onclick="async () => await HandleDelete()">Delete</button>
+            }
+            <button class="btn btn-primary submit" @onclick="async () => { await LoadTicketTypesAsync(); }" type="button" style="background-color:goldenrod">Add Membership</button>
+        </EditForm>
+        <br/>
+        <br
+        <EditForm Model="@searchTerm" OnValidSubmit="async () => await HandleSearch()" Context="editFormContext2">
+            <label class="search-input" for="Search">Search:</label>
+            <InputText class="form-control" id="Search" @bind-Value="searchTerm" />
+            <button class="btn btn-primary submit search-button">Search</button>
+        </EditForm>
+        <br/>
+        <br/>
+
+
+        <button class="refresh-table" @onclick="async () => await LoadClientsAsync()">Refresh</button>
+        
+        <br />
+        <br />
+
+        @if (@filteredClients.Count != 0)
+        {
+            <span>@filteredClients[0].Name</span>
+        }
+        <table class="clients-table table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th class="text-center">Deleted?</th>
+                    <th>Registered</th>
+                    <th>CNP</th>
+                    <th>Address</th>
+                    <th>Barcode</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var client in clients)
+                {
+                    <tr @onclick="(() => HandleItemSelected(client.ClientId))"
+                        class="clickable-row @((itemSelected && selectedItemId == client.ClientId ? "selected-row" : ""))">
+                        <td>@client.Name</td>
+                        <td>@client.Phone</td>
+                        <td>@client.Email</td>
+                        <td class="text-center">@(client.IsDeleted ? "Yes" : "No")</td>
+                        <td>@client.InsertedDate.ToShortDateString()</td>
+                        <td>@client.CNP</td>
+                        <td>@client.Address</td>
+                        <td>@client.Barcode</td>
+                        <td>@client.Notes</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <br />
+        <br
+    </Authorized>
+    <NotAuthorized>
+        <h2>You are not logged in!</h2>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private string searchTerm = "";
+    private void OnSelected(TicketTypes selection)
+    {
+        ticketType = selection;
+    }
+    
+    private InputValidator<Clients> myValidator = new InputValidator<Clients>();
+    private readonly AdminDbClient adminDbClient = new AdminDbClient(new MyDbContext());
+
+    private List<Clients> clients = new List<Clients>();
+    private List<TicketTypes> ticketTypes = new List<TicketTypes>();
+
+    private List<Clients> filteredClients = new List<Clients>();
+
+    private Clients newClient = new Clients();
+
+    private bool itemSelected = false;
+    private int selectedItemId = -1;
+    private bool updateSuccess = false;
+    private bool failed = false;
+    private bool loaded = false;
+    private bool refresh_clicked = false;
+    private bool added = false;
+    private bool addTicket = false;
+    private TicketTypes ticketType = new TicketTypes();
+
+    private int addReturnValue = 0;
+    private int updateReturnValue = 0;
+    private int deleteReturnValue = 0;
+
+    private void HandleItemSelected(int clientId)
+    {
+        updateSuccess = false;
+        failed = false;
+        itemSelected = true;
+        selectedItemId = clientId;
+        newClient = clients.First(client => client.ClientId == clientId);
+
+        if (newClient == null)
+        {
+            newClient = new Clients();
+        }
+    }
+
+    private async Task HandleSearch()
+    {
+        if (searchTerm == "")
+        {
+            return;
+        }
+        await LoadClientsAsync();
+        clients = string.IsNullOrWhiteSpace(searchTerm)
+            ? clients
+            : clients.Where(t => t.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)
+                              || t.Email.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)).ToList();
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        if(ticketType.Name != null)
+        {
+            using (var adminDbClient = new AdminDbClient(new MyDbContext()))
+            {
+                await adminDbClient.AddEntity<ClientTickets>(new ClientTickets {
+                        ClientId = newClient.ClientId,
+                        TicketTypeId = ticketType.TicketTypeId,
+                        IssueDate = DateTime.Now,
+                        Barcode = newClient.Barcode + DateTime.Now,
+                        NumOfEntries = ticketType.ValidityEntries,
+                        BuyPrice = ticketType.Price,
+                        Valid = true,
+                        FirstUsageDate = DateTime.Now,
+                        ArenaId = ticketType.ArenaId
+            });
+            }
+        }
+        updateSuccess = false;
+        failed = false;
+        using (var adminDbClient = new AdminDbClient(new MyDbContext()))
+        {
+            if (!itemSelected)
+            {
+                addReturnValue = await adminDbClient.AddEntity<Clients>(newClient);
+
+                if (addReturnValue == 1)
+                {
+                    added = true;
+                }
+                else
+                {
+                    failed = true;
+                }
+            }
+            else
+            {
+                if (selectedItemId == -1)
+                {
+                    throw new ArgumentNullException();
+                }
+                newClient.InsertedDate = DateTime.Now;
+                updateReturnValue = await adminDbClient.UpdateEntity<Clients>(selectedItemId, newClient);
+
+                if (updateReturnValue == 1)
+                {
+                    updateSuccess = true;
+                }
+                else
+                {
+                    failed = true;
+                }
+            }
+        }
+        await LoadClientsAsync();
+        itemSelected = false;
+        newClient = new Clients();
+    }
+
+    private async Task ClosePopup(int type)
+    {
+        StateHasChanged();
+        switch (type)
+        {
+            case 1:
+                await Task.Delay(2000);
+                updateSuccess = false;
+                loaded = false;
+                return;
+            case 2:
+                await Task.Delay(2000);
+                added = false;
+                loaded = false;
+                return;
+            case 3:
+                await Task.Delay(2000);
+                failed = false;
+                loaded = false;
+                return;
+            case 4:
+                await Task.Delay(2000);
+                updateSuccess = false;
+                added = false;
+                loaded = false;
+                return;
+            default:
+                return;
+        }
+    }
+
+    private async Task HandleDelete()
+    {
+        updateSuccess = false;
+        failed = false;
+        using (var adminDbClient = new AdminDbClient(new MyDbContext()))
+        {
+            deleteReturnValue = await adminDbClient.DeleteEntity<Clients>(selectedItemId);      
+        }
+
+        await LoadClientsAsync();
+        itemSelected = false;
+        newClient = new Clients();
+        await ClosePopup(1);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadClientsAsync();
+    }
+
+    private async Task LoadClientsAsync()
+    {
+        refresh_clicked = true;
+        using (var adminDbClient = new AdminDbClient(new MyDbContext()))
+        {
+            int act_length = clients.Count();
+            bool empty = false;
+            if (act_length == 0)
+            {
+                empty = true;
+            }
+            clients = await adminDbClient.GetTable<Clients>();
+            if (!empty || clients.Count() > act_length)
+            {
+                loaded = true;
+                refresh_clicked = false;
+                await ClosePopup(4);
+            }
+        }
+    }
+
+    private async Task LoadTicketTypesAsync()
+    {
+        using (var adminDbClient = new AdminDbClient(new MyDbContext()))
+        {
+            ticketTypes = await adminDbClient.GetTable<TicketTypes>();
+            ticketTypes = ticketTypes.Where(it => it.IsDeleted == false).ToList();
+            if(ticketTypes == null)
+            {
+                return;
+            }
+            addTicket = true;
+        }
+    }
+}

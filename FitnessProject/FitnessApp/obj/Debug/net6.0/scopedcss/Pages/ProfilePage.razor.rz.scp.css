@@ -1,0 +1,19 @@
+.card[b-lacabezum0] {
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    padding: 10px;
+    width: 400px;
+}
+
+.card:hover[b-lacabezum0] {
+    box-shadow: 5px 8px rgba(0,0,0,0.2);
+}
+
+.icon[b-lacabezum0] {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    vertical-align: middle; /* Align the icon vertically with the text */
+    margin-right: 5px; /* Add some spacing between the icon and the text */
+}

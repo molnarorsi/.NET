@@ -1,0 +1,569 @@
+/* _content/FitnessApp/Pages/ClientsPage.razor.rz.scp.css */
+th[b-2eokvx7o1p] {
+    font-size: 20px;
+    text-align: center;
+}
+
+td[b-2eokvx7o1p] {
+    padding: 10px;
+    font-size: 20px;
+}
+
+table[b-2eokvx7o1p], th[b-2eokvx7o1p], td[b-2eokvx7o1p] {
+    border: 1px solid;
+}
+
+table[b-2eokvx7o1p] {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: right;
+}
+
+.refresh-table[b-2eokvx7o1p] {
+    margin-top: 50px;
+}
+
+.selected[b-2eokvx7o1p] {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+.ticket-type-row[b-2eokvx7o1p] {
+    cursor: pointer;
+}
+
+.submit[b-2eokvx7o1p] {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+h1[b-2eokvx7o1p] {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.export[b-2eokvx7o1p] {
+    float: right;
+    margin-top: 40px;
+}
+
+.fade-in[b-2eokvx7o1p] {
+    animation: fadeIn-b-2eokvx7o1p 1s;
+}
+
+@keyframes fadeIn-b-2eokvx7o1p {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.alert[b-2eokvx7o1p] {
+    border-radius: 10px;
+    width: max-content;
+    position: fixed;
+    top: 10px;
+}
+
+.dropdown-toggle[b-2eokvx7o1p] {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-menu[b-2eokvx7o1p] {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    min-width: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.dropdown-menu a[b-2eokvx7o1p] {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover[b-2eokvx7o1p] {
+    background-color: #f0f0f0;
+}
+
+.dropdown.show .dropdown-menu[b-2eokvx7o1p] {
+    display: block;
+}
+
+.search-input[b-2eokvx7o1p] {
+   margin-top: 50px;
+}
+
+.search-button[b-2eokvx7o1p] {
+    margin-top: 5px;
+}
+
+.icon[b-2eokvx7o1p] {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    vertical-align: middle; /* Align the icon vertically with the text */
+    margin-right: 5px; /* Add some spacing between the icon and the text */
+}
+
+.clients-table[b-2eokvx7o1p] {
+    border-collapse: collapse; /* Remove extra space between borders */
+    width: 100%;
+}
+
+    .clients-table th[b-2eokvx7o1p], .clients-table td[b-2eokvx7o1p] {
+        border: 1px solid #ddd; /* Light border for better readability */
+        padding: 10px;
+        text-align: left;
+    }
+
+    .clients-table th[b-2eokvx7o1p] {
+        background-color: #f2f2f2; /* Light gray header background */
+        font-weight: bold;
+    }
+
+.clickable-row:hover[b-2eokvx7o1p] {
+    background-color: #f5f5f5; /* Hover effect */
+    cursor: pointer; /* Indicate that it's clickable */
+}
+
+.selected-row[b-2eokvx7o1p] {
+    background-color: #e0f7fa; /* Selected row highlight */
+}
+
+.filtered-name[b-2eokvx7o1p] {
+    margin-bottom: 15px;
+    display: block;
+    font-weight: bold;
+}
+
+.text-center[b-2eokvx7o1p] {
+    text-align: center;
+}
+/* _content/FitnessApp/Pages/ClientTicketsPage.razor.rz.scp.css */
+h1[b-sass7qh0c8] {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+}
+
+th[b-sass7qh0c8] {
+    font-size: 20px;
+    text-align: center;
+}
+
+td[b-sass7qh0c8] {
+    padding: 10px;
+    font-size: 20px;
+}
+
+table[b-sass7qh0c8], th[b-sass7qh0c8], td[b-sass7qh0c8] {
+    border: 1px solid;
+}
+
+table[b-sass7qh0c8] {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: right;
+}
+
+.fade-in[b-sass7qh0c8] {
+    animation: fadeIn-b-sass7qh0c8 1s;
+}
+
+@keyframes fadeIn-b-sass7qh0c8 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.alert[b-sass7qh0c8] {
+    border-radius: 10px;
+    width: max-content;
+    position: fixed;
+    top: 10px;
+}
+
+.icon[b-sass7qh0c8] {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    vertical-align: middle; /* Align the icon vertically with the text */
+    margin-right: 5px; /* Add some spacing between the icon and the text */
+}
+
+.client-tickets-table[b-sass7qh0c8] {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    .client-tickets-table th[b-sass7qh0c8], .client-tickets-table td[b-sass7qh0c8] {
+        border: 1px solid #ddd;
+        padding: 12px; /* Increased padding for better spacing */
+        text-align: left;
+    }
+
+    .client-tickets-table th[b-sass7qh0c8] {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    .client-tickets-table tr:hover[b-sass7qh0c8] {
+        background-color: #f5f5f5; /* Hover effect */
+        cursor: pointer;
+    }
+
+.text-center[b-sass7qh0c8] {
+    text-align: center;
+}
+/* _content/FitnessApp/Pages/EntriesPage.razor.rz.scp.css */
+body[b-xvtqlj7ndd] {
+}
+h1[b-xvtqlj7ndd] {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+}
+
+th[b-xvtqlj7ndd] {
+    font-size: 20px;
+    text-align: center;
+}
+
+td[b-xvtqlj7ndd] {
+    padding: 10px;
+    font-size: 20px;
+}
+
+table[b-xvtqlj7ndd], th[b-xvtqlj7ndd], td[b-xvtqlj7ndd] {
+    border: 1px solid;
+}
+
+table[b-xvtqlj7ndd] {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: right;
+}
+
+.fade-in[b-xvtqlj7ndd] {
+    animation: fadeIn-b-xvtqlj7ndd 1s;
+}
+
+@keyframes fadeIn-b-xvtqlj7ndd {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.alert[b-xvtqlj7ndd] {
+    border-radius: 10px;
+    width: max-content;
+    position: fixed;
+    top: 10px;
+}
+
+.icon[b-xvtqlj7ndd] {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    vertical-align: middle; /* Align the icon vertically with the text */
+    margin-right: 5px; /* Add some spacing between the icon and the text */
+}
+/* _content/FitnessApp/Pages/EntryPage.razor.rz.scp.css */
+.card[b-tehpl1dj4n] {
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    padding: 10px;
+    width: 400px;
+}
+
+.card:hover[b-tehpl1dj4n] {
+    box-shadow: 5px 8px rgba(0,0,0,0.2);
+}
+
+.icon[b-tehpl1dj4n] {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    vertical-align: middle; /* Align the icon vertically with the text */
+    margin-right: 5px; /* Add some spacing between the icon and the text */
+}
+/* _content/FitnessApp/Pages/Login.razor.rz.scp.css */
+.custWidth[b-bv6ypt54pc] {
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Ensure the container takes full viewport height */
+}
+
+.icon[b-bv6ypt54pc] {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    vertical-align: middle; /* Align the icon vertically with the text */
+    margin-right: 5px; /* Add some spacing between the icon and the text */
+}
+/* _content/FitnessApp/Pages/ProfilePage.razor.rz.scp.css */
+.card[b-lacabezum0] {
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    padding: 10px;
+    width: 400px;
+}
+
+.card:hover[b-lacabezum0] {
+    box-shadow: 5px 8px rgba(0,0,0,0.2);
+}
+
+.icon[b-lacabezum0] {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    vertical-align: middle; /* Align the icon vertically with the text */
+    margin-right: 5px; /* Add some spacing between the icon and the text */
+}
+/* _content/FitnessApp/Pages/TicketTypesPage.razor.rz.scp.css */
+th[b-udr5dt77aw] {
+    font-size: 20px;
+    text-align: center;
+}
+
+td[b-udr5dt77aw] {
+    padding: 10px;
+    font-size: 20px;
+}
+
+table[b-udr5dt77aw], th[b-udr5dt77aw], td[b-udr5dt77aw] {
+    border: 1px solid;
+}
+
+table[b-udr5dt77aw] {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: right;
+}
+
+.refresh-table[b-udr5dt77aw] {
+    margin-top: 50px;
+}
+
+.selected[b-udr5dt77aw] {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+.ticket-type-row[b-udr5dt77aw] {
+    cursor: pointer;
+}
+
+.submit[b-udr5dt77aw] {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+h1[b-udr5dt77aw] {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.fade-in[b-udr5dt77aw] {
+    animation: fadeIn-b-udr5dt77aw 1s;
+}
+
+@keyframes fadeIn-b-udr5dt77aw {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.alert[b-udr5dt77aw] {
+    border-radius: 10px;
+    width: max-content;
+    position: fixed;
+    top: 10px;
+}
+/* _content/FitnessApp/Shared/MainLayout.razor.rz.scp.css */
+.page[b-xzqs4padnd] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-xzqs4padnd] {
+    flex: 1;
+}
+
+.sidebar[b-xzqs4padnd] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-xzqs4padnd] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-xzqs4padnd]  a, .top-row .btn-link[b-xzqs4padnd] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-xzqs4padnd] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-xzqs4padnd] {
+        display: none;
+    }
+
+    .top-row.auth[b-xzqs4padnd] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-xzqs4padnd], .top-row .btn-link[b-xzqs4padnd] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-xzqs4padnd] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-xzqs4padnd] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-xzqs4padnd] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-xzqs4padnd], article[b-xzqs4padnd] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .btn[b-xzqs4padnd] {
+        color: rgb(5, 39, 103);
+        position: center;
+        display:flex;
+        justify-content: center;
+    }
+}
+/* _content/FitnessApp/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-3rzwx7eiqm] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-3rzwx7eiqm] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-3rzwx7eiqm] {
+    font-size: 1.1rem;
+}
+
+.oi[b-3rzwx7eiqm] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-3rzwx7eiqm] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-3rzwx7eiqm] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-3rzwx7eiqm] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-3rzwx7eiqm]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-3rzwx7eiqm]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-3rzwx7eiqm]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-3rzwx7eiqm] {
+        display: none;
+    }
+
+    .collapse[b-3rzwx7eiqm] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
+
+.logo-container[b-3rzwx7eiqm] {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center icon and text */
+    margin-bottom: 15px; /* Add some space below the logo */
+}
+
+.logo-icon[b-3rzwx7eiqm] {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    margin-right: 10px; /* Add spacing between icon and text */
+}

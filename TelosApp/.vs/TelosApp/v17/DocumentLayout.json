@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|d:\\anyagok\\sapientia\\ii felev\\.net\\lab 8 - maui - andorid vs ios, ironpdf\\szemetes\\szt\\telosapp\\telosapp\\views\\productdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|solutionrelative:telosapp\\views\\productdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|d:\\anyagok\\sapientia\\ii felev\\.net\\lab 8 - maui - andorid vs ios, ironpdf\\szemetes\\szt\\telosapp\\telosapp\\views\\productlist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|solutionrelative:telosapp\\views\\productlist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|d:\\anyagok\\sapientia\\ii felev\\.net\\lab 8 - maui - andorid vs ios, ironpdf\\szemetes\\szt\\telosapp\\telosapp\\views\\productdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|solutionrelative:telosapp\\views\\productdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|d:\\anyagok\\sapientia\\ii felev\\.net\\lab 8 - maui - andorid vs ios, ironpdf\\szemetes\\szt\\telosapp\\telosapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|solutionrelative:telosapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|d:\\anyagok\\sapientia\\ii felev\\.net\\lab 8 - maui - andorid vs ios, ironpdf\\szemetes\\szt\\telosapp\\telosapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|solutionrelative:telosapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|d:\\anyagok\\sapientia\\ii felev\\.net\\lab 8 - maui - andorid vs ios, ironpdf\\szemetes\\szt\\telosapp\\telosapp\\views\\productlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|solutionrelative:telosapp\\views\\productlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|d:\\anyagok\\sapientia\\ii felev\\.net\\lab 8 - maui - andorid vs ios, ironpdf\\szemetes\\szt\\telosapp\\telosapp\\services\\productsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|solutionrelative:telosapp\\services\\productsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|d:\\anyagok\\sapientia\\ii felev\\.net\\lab 8 - maui - andorid vs ios, ironpdf\\szemetes\\szt\\telosapp\\telosapp\\services\\iproductsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|solutionrelative:telosapp\\services\\iproductsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|d:\\anyagok\\sapientia\\ii felev\\.net\\lab 8 - maui - andorid vs ios, ironpdf\\szemetes\\szt\\telosapp\\telosapp\\models\\allproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|solutionrelative:telosapp\\models\\allproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|d:\\anyagok\\sapientia\\ii felev\\.net\\lab 8 - maui - andorid vs ios, ironpdf\\szemetes\\szt\\telosapp\\telosapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67562860-74B0-4E37-BFD9-1ADBFB2AFB35}|TelosApp\\TelosApp.csproj|solutionrelative:telosapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "TelosApp\\AppShell.xaml.cs",
+              "ToolTip": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\AppShell.xaml.cs",
+              "RelativeToolTip": "TelosApp\\AppShell.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T17:35:41.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductDetails.xaml.cs",
+              "DocumentMoniker": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\Views\\ProductDetails.xaml.cs",
+              "RelativeDocumentMoniker": "TelosApp\\Views\\ProductDetails.xaml.cs",
+              "ToolTip": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\Views\\ProductDetails.xaml.cs",
+              "RelativeToolTip": "TelosApp\\Views\\ProductDetails.xaml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T17:33:08.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductDetails.xaml",
+              "DocumentMoniker": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\Views\\ProductDetails.xaml",
+              "RelativeDocumentMoniker": "TelosApp\\Views\\ProductDetails.xaml",
+              "ToolTip": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\Views\\ProductDetails.xaml",
+              "RelativeToolTip": "TelosApp\\Views\\ProductDetails.xaml",
+              "ViewState": "AQIAABQAAAAAAAAAAAASwB4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T17:32:00.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductsService.cs",
+              "DocumentMoniker": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\Services\\ProductsService.cs",
+              "RelativeDocumentMoniker": "TelosApp\\Services\\ProductsService.cs",
+              "ToolTip": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\Services\\ProductsService.cs",
+              "RelativeToolTip": "TelosApp\\Services\\ProductsService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAxwCsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T17:19:21.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IProductsRepository.cs",
+              "DocumentMoniker": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\Services\\IProductsRepository.cs",
+              "RelativeDocumentMoniker": "TelosApp\\Services\\IProductsRepository.cs",
+              "ToolTip": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\Services\\IProductsRepository.cs",
+              "RelativeToolTip": "TelosApp\\Services\\IProductsRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T17:18:31.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "TelosApp\\Models\\Product.cs",
+              "ToolTip": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\Models\\Product.cs",
+              "RelativeToolTip": "TelosApp\\Models\\Product.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA/wB0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T17:17:55.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AllProducts.cs",
+              "DocumentMoniker": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\Models\\AllProducts.cs",
+              "RelativeDocumentMoniker": "TelosApp\\Models\\AllProducts.cs",
+              "ToolTip": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\Models\\AllProducts.cs",
+              "RelativeToolTip": "TelosApp\\Models\\AllProducts.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T17:17:32.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductList.xaml.cs",
+              "DocumentMoniker": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\Views\\ProductList.xaml.cs",
+              "RelativeDocumentMoniker": "TelosApp\\Views\\ProductList.xaml.cs",
+              "ToolTip": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\Views\\ProductList.xaml.cs",
+              "RelativeToolTip": "TelosApp\\Views\\ProductList.xaml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T17:14:25.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\AppShell.xaml",
+              "RelativeDocumentMoniker": "TelosApp\\AppShell.xaml",
+              "ToolTip": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\AppShell.xaml",
+              "RelativeToolTip": "TelosApp\\AppShell.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T17:02:16.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductList.xaml",
+              "DocumentMoniker": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\Views\\ProductList.xaml",
+              "RelativeDocumentMoniker": "TelosApp\\Views\\ProductList.xaml",
+              "ToolTip": "D:\\Anyagok\\Sapientia\\II felev\\.Net\\Lab 8 - Maui - Andorid vs IOS, IronPDF\\Szemetes\\SZT\\TelosApp\\TelosApp\\Views\\ProductList.xaml",
+              "RelativeToolTip": "TelosApp\\Views\\ProductList.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T17:01:44.172Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

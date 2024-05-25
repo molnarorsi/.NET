@@ -1,7 +1,17 @@
 ﻿<div class="row">
 	<h1>@MoviesDetails?.title</h1>
 	<div class="col-3">
-		<img style="width:300px;height:450px; margin-bottom: 10px;" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/@MoviesDetails?.poster_path?.Replace("/", "")" />
+		<img style="width:300px;height:450px; margin-bottom: 10px;" 
+		src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/@MoviesDetails?.poster_path?.Replace("/", "")" />
+
+		@if (InWatchList)
+		{
+			<button @onclick="()=> RemoveFromWatchlist()">Add to watchlist!</button>
+		} else
+		{
+			<button @onclick="()=> AddToWatchlist()">Add to watchlist!</button>
+		}
+		
 	</div>
 	<div class="col-4">
 		<p>@MoviesDetails?.overview</p>
@@ -11,4 +21,16 @@
 @code {
 	[Parameter]
 	public MovieDetailsResult MoviesDetails { get; set; }
+
+	void AddToWatchlist()
+	{
+		var db = new SQLiteDBContext();
+		db.Watchlists.Add(new Watchlist()
+			{
+				MovieId = MoviesDetails.id,
+				Title = MoviesDetails.title,
+				PosterPath = MoviesDetails.poster_path,
+			});
+			db.SaveChanges();
+	}
 }

@@ -1,0 +1,65 @@
+th[b-udr5dt77aw] {
+    font-size: 20px;
+    text-align: center;
+}
+
+td[b-udr5dt77aw] {
+    padding: 10px;
+    font-size: 20px;
+}
+
+table[b-udr5dt77aw], th[b-udr5dt77aw], td[b-udr5dt77aw] {
+    border: 1px solid;
+}
+
+table[b-udr5dt77aw] {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: right;
+}
+
+.refresh-table[b-udr5dt77aw] {
+    margin-top: 50px;
+}
+
+.selected[b-udr5dt77aw] {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+.ticket-type-row[b-udr5dt77aw] {
+    cursor: pointer;
+}
+
+.submit[b-udr5dt77aw] {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+h1[b-udr5dt77aw] {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.fade-in[b-udr5dt77aw] {
+    animation: fadeIn-b-udr5dt77aw 1s;
+}
+
+@keyframes fadeIn-b-udr5dt77aw {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.alert[b-udr5dt77aw] {
+    border-radius: 10px;
+    width: max-content;
+    position: fixed;
+    top: 10px;
+}

@@ -1,0 +1,50 @@
+﻿body[b-gjd1su9fun] {
+}
+
+h1[b-gjd1su9fun] {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+}
+
+th[b-gjd1su9fun] {
+    font-size: 20px;
+    text-align: center;
+}
+
+td[b-gjd1su9fun] {
+    padding: 10px;
+    font-size: 20px;
+}
+
+table[b-gjd1su9fun], th[b-gjd1su9fun], td[b-gjd1su9fun] {
+    border: 1px solid;
+}
+
+table[b-gjd1su9fun] {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: right;
+}
+
+.fade-in[b-gjd1su9fun] {
+    animation: fadeIn-b-gjd1su9fun 1s;
+}
+
+@keyframes fadeIn-b-gjd1su9fun {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.alert[b-gjd1su9fun] {
+    border-radius: 10px;
+    width: max-content;
+    position: fixed;
+    top: 10px;
+}

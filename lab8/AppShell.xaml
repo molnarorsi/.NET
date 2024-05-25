@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="lab8.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:lab8"
+    xmlns:views="clr-namespace:lab8.Views"
+    Title="lab8"
+    Shell.FlyoutBehavior="Disabled">
+
+
+
+    <ShellContent
+        Title="Products"
+        ContentTemplate="{DataTemplate views:ProductList}"/>
+
+</Shell>

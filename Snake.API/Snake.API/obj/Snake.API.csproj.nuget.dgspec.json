@@ -1,0 +1,399 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API\\Snake.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Application\\Snake.API.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Application\\Snake.API.Application.csproj",
+        "projectName": "Snake.API.Application",
+        "projectPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Application\\Snake.API.Application.csproj",
+        "packagesPath": "C:\\Users\\molna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\molna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Domain\\Snake.API.Domain.csproj": {
+                "projectPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Domain\\Snake.API.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.Abstraction\\Snake.API.Data.Abstraction.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.Abstraction\\Snake.API.Data.Abstraction.csproj",
+        "projectName": "Snake.API.Data.Abstraction",
+        "projectPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.Abstraction\\Snake.API.Data.Abstraction.csproj",
+        "packagesPath": "C:\\Users\\molna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.Abstraction\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\molna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.MongoDB\\Snake.API.Data.MongoDB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.MongoDB\\Snake.API.Data.MongoDB.csproj",
+        "projectName": "Snake.API.Data.MongoDB",
+        "projectPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.MongoDB\\Snake.API.Data.MongoDB.csproj",
+        "packagesPath": "C:\\Users\\molna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.MongoDB\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\molna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.Abstraction\\Snake.API.Data.Abstraction.csproj": {
+                "projectPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.Abstraction\\Snake.API.Data.Abstraction.csproj"
+              },
+              "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Domain\\Snake.API.Domain.csproj": {
+                "projectPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Domain\\Snake.API.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.25.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Domain\\Snake.API.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Domain\\Snake.API.Domain.csproj",
+        "projectName": "Snake.API.Domain",
+        "projectPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Domain\\Snake.API.Domain.csproj",
+        "packagesPath": "C:\\Users\\molna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\molna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.Abstraction\\Snake.API.Data.Abstraction.csproj": {
+                "projectPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.Abstraction\\Snake.API.Data.Abstraction.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API\\Snake.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API\\Snake.API.csproj",
+        "projectName": "Snake.API",
+        "projectPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API\\Snake.API.csproj",
+        "packagesPath": "C:\\Users\\molna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\molna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Application\\Snake.API.Application.csproj": {
+                "projectPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Application\\Snake.API.Application.csproj"
+              },
+              "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.Abstraction\\Snake.API.Data.Abstraction.csproj": {
+                "projectPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.Abstraction\\Snake.API.Data.Abstraction.csproj"
+              },
+              "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.MongoDB\\Snake.API.Data.MongoDB.csproj": {
+                "projectPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.MongoDB\\Snake.API.Data.MongoDB.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

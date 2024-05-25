@@ -1,0 +1,164 @@
+﻿@page "/entry"
+
+<PageTitle>Entry</PageTitle>
+
+@using FitnessAppApi.Api
+@using FitnessAppApi.Context
+@using FitnessAppApi
+
+<AuthorizeView>
+    <Authorized>
+        <h3>
+            <img src="/images/barcode.png" alt="Barcode" class="icon" />
+            Enter Membership Barcode
+            </h3>
+        @if (Message != null)
+        {
+            if (Message == "Success" || Message == "Access granted")
+            {
+                <div class="alert alert-success">@Message</div>
+            }
+            else
+            {
+                <div class="alert alert-danger">@Message</div>
+            }
+        }
+
+        <input type="text" @bind="barcode" />
+
+        <button class="btn btn-primary" @onclick="ValidateTicketBarcodeAsync">Submit</button>
+
+        @if (dataLoaded)
+        {
+            if(ticketOrClient != null)
+            {
+                if(ticketOrClient == true)
+                {
+                    <h2>Name: @client.Name</h2>
+                    <h3>Ticket Details</h3>
+                    <div class="card">
+                        <p>Barcode: @ticket.Barcode</p>
+                        <p>Valid: @ticket.Valid</p>
+                        <p>Valid Until: @(ticket.IssueDate.AddDays(ticketType.ValidityDays).Date)</p>
+                        <p>Entries Remained: @ticket.NumOfEntries</p>
+                        @if (ticket.Valid && ticket.NumOfEntries > 0 || (ticket.IssueDate.AddDays(ticketType.ValidityDays) >= DateTime.Now))
+                        {
+                            <button @onclick="() => ValidateEntry(ticket.Barcode)">Submit</button>
+                        }
+                    </div>
+                }
+                else if(ticketOrClient == false)
+                {
+                    <h2>Name: @client.Name</h2>
+                    @foreach (var t in tickets)
+                    {
+                        <div class="card">
+                            <p>Barcode: @t.Barcode</p>
+                            <p>Valid: @t.Valid</p>
+                            <p>Valid Until: @t.IssueDate.AddDays(ticketTypes.FirstOrDefault(it => it.TicketTypeId == t.TicketTypeId).ValidityDays))</p>
+                            <p>Entries Remained: @t.NumOfEntries</p>
+                            @if (t.Valid == true)
+                            {
+                                @if (t.NumOfEntries > 0 || (t.IssueDate.AddDays(ticketTypes.FirstOrDefault(it => it.TicketTypeId == t.TicketTypeId).ValidityDays)) <= DateTime.Now)
+                                {
+                                    <button @onclick="() => ValidateEntry(t.Barcode)">Enter Gym</button>
+                                }
+                            }
+                        </div>
+                        <br />
+                    }
+                }
+            }
+        }
+        @if (isLoading)
+        {
+            <div>Loading...</div>
+        }       
+    </Authorized>
+    <NotAuthorized>
+        <h2>Please log in!</h2>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private ClientTickets ticket = new ClientTickets();
+    private List<ClientTickets> tickets = new List<ClientTickets>();
+    private Clients client = new Clients();
+    private Entries entry = new Entries();
+    private TicketTypes ticketType = new TicketTypes();
+    private List<TicketTypes> ticketTypes = new List<TicketTypes>();
+    private string barcode = "";
+    private string? Message;
+    private bool isLoading = false;
+    private bool dataLoaded = false;
+    private bool? ticketOrClient;
+
+    private async Task ValidateEntry(string ticketBC)
+    {
+        Message = null;
+        using(var adminDbClient = new AdminDbClient(new MyDbContext()))
+        {
+            var tempTicket = await adminDbClient.GetByBarcode<ClientTickets>(ticketBC);
+            entry = new Entries
+            {
+                ClientId = client.ClientId,
+                TicketTypeId = tempTicket.TicketTypeId,
+                Date = DateTime.Now,
+                InsertedByUid = 1,
+                Barcode = tempTicket.Barcode,
+                ArenaId = tempTicket.ArenaId
+            };
+            isLoading = true;
+            await adminDbClient.AddEntity<Entries>(entry);
+            if(tempTicket.NumOfEntries > 0)
+            {
+                --tempTicket.NumOfEntries;
+                await adminDbClient.UpdateEntity<ClientTickets>(tempTicket.ClientTicketsId, tempTicket);
+            }
+            isLoading = false;
+            Message = "Access granted";
+        }
+        dataLoaded = false;
+        barcode = "";
+    }
+
+    private async Task ValidateTicketBarcodeAsync()
+    {
+        dataLoaded = false;
+        Message = null;
+        using(var adminDbClient = new AdminDbClient(new MyDbContext()))
+        {
+            isLoading = true;
+            ticket = await adminDbClient.GetByBarcode<ClientTickets>(barcode);
+            if(ticket == null)
+            {
+                client = await adminDbClient.GetByBarcode<Clients>(barcode);
+                if(client == null)
+                {
+                    Message = "Invalid barcode";
+                    isLoading = false;
+                    return;
+                }
+                else
+                {
+                    tickets = await adminDbClient.GetClientTicketsByClientId(client.ClientId);
+                    ticketTypes = await adminDbClient.GetTable<TicketTypes>();
+                    ticketOrClient = false;
+                    isLoading = false;
+                    dataLoaded = true;
+                    return;
+                }
+            }
+            else
+            {
+                ticketOrClient = true;
+                Message = "Success";
+                client = await adminDbClient.GetClientByClientId(ticket.ClientId);
+                ticketType = await adminDbClient.GetTicketTypeByTicketTypeId(ticket.TicketTypeId);
+                isLoading = false;
+                dataLoaded = true;
+                return;
+            }
+        }
+    }
+}

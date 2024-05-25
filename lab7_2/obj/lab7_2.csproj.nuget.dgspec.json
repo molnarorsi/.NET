@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\molna\\source\\repos\\lab7_2\\lab7_2.csproj": {}
+    "C:\\Users\\molna\\source\\repos\\.NET\\lab7_2\\lab7_2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\molna\\source\\repos\\lab7_2\\lab7_2.csproj": {
+    "C:\\Users\\molna\\source\\repos\\.NET\\lab7_2\\lab7_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\molna\\source\\repos\\lab7_2\\lab7_2.csproj",
+        "projectUniqueName": "C:\\Users\\molna\\source\\repos\\.NET\\lab7_2\\lab7_2.csproj",
         "projectName": "lab7_2",
-        "projectPath": "C:\\Users\\molna\\source\\repos\\lab7_2\\lab7_2.csproj",
+        "projectPath": "C:\\Users\\molna\\source\\repos\\.NET\\lab7_2\\lab7_2.csproj",
         "packagesPath": "C:\\Users\\molna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\molna\\source\\repos\\lab7_2\\obj\\",
+        "outputPath": "C:\\Users\\molna\\source\\repos\\.NET\\lab7_2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

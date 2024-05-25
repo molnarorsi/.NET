@@ -1,0 +1,92 @@
+﻿@page "/"
+
+<PageTitle>Profile</PageTitle>/>
+
+@using ClientAPI.API
+@using ClientAPI.Context
+@using ClientAPI
+@using static ClientAPI.API.Entities
+
+<h1>Profile</h1>
+<h3>Client Barcode</h3>
+
+@if (Message != null)
+{
+    if (Message == "Success" || Message == "Access granted")
+    {
+        <div class="alert alert-success">@Message</div>
+    }
+    else
+    {
+        <div class="alert alert-danger">@Message</div>
+    }
+}
+
+<input type="text" @bind="clientBarcode" />
+<button class="btn btn-primary" @onclick="ValidateBarcodeAsync">Submit</button>
+
+@if (dataLoaded)
+{
+    <p>Name: @client.clientName</p>
+    @if (clientMemberships.Count != 0)
+    {
+        @foreach (var membership in clientMemberships)
+        {
+            <div class="card">
+                <p>Barcode: @membership.barcode</p>
+                <p>IssueDate: @membership.buyingDate</p>
+                <p>Entries Remained: @membership.nrOfEntries</p>
+                <p>Is Valid: @membership.isValid</p>
+                <p>Price: @membership.price</p>
+            </div>
+        }
+
+    }
+    else
+    {
+        <p>No tickets yet.</p>
+    }
+
+}
+
+@if (isLoading)
+{
+    <div>Loading...</div>
+}
+
+@code {
+    private void OnSelected(string selection)
+    {
+        Console.WriteLine(selection);
+    }
+    private string selectedColor;
+
+    private string clientBarcode = "";
+    private List<Entities.ClientMemberships> clientMemberships = new List<Entities.ClientMemberships>();
+    private Entities.Clients client = new Entities.Clients();
+    private string? Message;
+    private bool isLoading = false;
+    bool dataLoaded = false;
+
+    private async Task ValidateBarcodeAsync()
+    {
+        dataLoaded = false;
+        Message = null;
+        using (var adminDBContext = new AdminDBClient(new MyDBContext()))
+        {
+            isLoading = true;
+            client = await adminDBContext.GetMembershipByBarcode<Entities.Clients>(clientBarcode);
+            if(client == null)
+            {
+                Message = "Invalid barcode!";
+                isLoading = false;
+                return;
+            }
+
+            Message = "Works!";
+            clientMemberships = await adminDBContext.GetClientMembershipsByClientID(client.clientID);
+            isLoading = false;
+            dataLoaded = true;
+        }
+    }
+}

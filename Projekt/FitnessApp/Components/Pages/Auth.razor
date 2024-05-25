@@ -1,0 +1,175 @@
+﻿@page "/auth"
+<PageTitle>Auth</PageTitle>
+
+@using ClientAPI.API
+@using ClientAPI.Context
+@using ClientAPI
+@using static ClientAPI.API.Entities
+@inject NavigationManager NavigationManager
+
+
+<AuthorizeView>
+    <Authorized>
+
+<h1>Entry Page</h1>
+<h3>Enter Ticket Barcode</h3>
+
+@if(Message != null) {
+    if(Message == "Success" || Message == "Access provided") {
+        <div class="alert alert-success">@Message</div>
+    }
+    else {
+        <div class="alert alert-danger">@Message</div>
+    }
+}
+
+<input type="text" @bind="barcode"/>
+<button class="btn btn-primary" @onclick="ValidateMembershipBarcodeAsync">Submit</button>
+
+@if(dataLoaded) {
+    if(membershipOrClient != null)
+    {
+        if(membershipOrClient == true)
+        {
+            <h2>Name: @client.clientName </h2>
+            <h3>Membership Details</h3>
+            <div class="card">
+                <p>Barcode: @clientMembership.barcode</p>
+                <p>Valid: @clientMembership.isValid</p>
+                <p>Valid between: @(clientMembership.buyingDate.AddDays(membership.validityDays).Date)</p>
+                <p>Entries left: @clientMembership.nrOfEntries</p>
+                @if(clientMembership.isValid && clientMembership.nrOfEntries > 0 || (clientMembership.buyingDate.AddDays(membership.validityDays) >= DateTime.Now))
+                {
+                    <button @onclick="() => ValidateEntry(clientMembership.barcode)">Submit</button>
+                }
+            </div>
+        }
+        else if (membershipOrClient == false)
+        {
+            <h2>Name: @client.clientName</h2>
+            @foreach (var t in clientMemberships)
+            {
+                <div class="card">
+                    <p>Barcode: @t.barcode</p>
+                    <p>Valid: @t.isValid</p>
+                    <p>Valid Until: @(t.buyingDate.AddDays(memberships.FirstOrDefault(it => it.membershipID == t.membershipID).validityDays).Date)</p>
+                    <p>Entries Left: @t.nrOfEntries</p>
+                    @if (t.isValid == true)
+                    {
+                        @if (t.isValid == true)
+                        {
+                            @if (t.nrOfEntries > 0 || (t.buyingDate.AddDays(memberships.FirstOrDefault(it => it.membershipID == t.membershipID).validityDays)) <= DateTime.Now)
+                            {
+                                <button @onclick="() => ValidateEntry(t.barcode)">Enter Gym</button>
+                            }
+                        }
+
+                    }
+                    </div>
+                <br />
+            }
+        }
+    }
+}
+
+@if (isLoading)
+{
+    <div>Wait a few moments...</div>
+}
+    </Authorized>
+    <NotAuthorized>
+        <h2>Please log in!</h2>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+
+    private Entities.ClientMemberships clientMembership = new Entities.ClientMemberships();
+    private List<Entities.ClientMemberships> clientMemberships = new List<Entities.ClientMemberships>();
+    private Entities.Clients client = new Entities.Clients();
+    private Entities.Entries entry = new Entities.Entries();
+
+    private Entities.Memberships membership = new Entities.Memberships();
+    private List<Entities.Memberships> memberships = new List<Entities.Memberships>();
+
+    private string barcode = "";
+    private string? Message;
+    private bool isLoading = false;
+    private bool dataLoaded = false;
+    private bool? membershipOrClient; //true membership/ false client
+
+    private async Task ValidateEntry(string membershipBarcode)
+    {
+        Message = null;
+        using(var adminDBClient = new AdminDBClient(new MyDBContext()))
+        {
+            var tempMembership = await adminDBClient.GetMembershipByBarcode<Entities.ClientMemberships>(membershipBarcode);
+            entry = new Entities.Entries
+                {
+                    clientID = client.clientID,
+                    membershipID = tempMembership.membershipID,
+                    date = DateTime.Now,
+                    insertedByUID = 1,
+                    barcode = tempMembership.barcode,
+                    fitnessID = tempMembership.fitnessID
+                };
+
+            isLoading = true;
+            await adminDBClient.AddEntity<Entities.Entries>(entry);
+            if(tempMembership.nrOfEntries > 0 )
+            {
+                --tempMembership.nrOfEntries;
+                await adminDBClient.UpdateEntity<Entities.ClientMemberships>(tempMembership.clientMembershipID, tempMembership);
+            }
+            isLoading = false;
+            Message = "Access provided";
+        }
+
+        dataLoaded = false;
+        barcode = "";
+    }
+
+    private async Task ValidateMembershipBarcodeAsync()
+    {
+        dataLoaded = false;
+        Message = null;
+        using(var adminDBClient = new AdminDBClient(new MyDBContext()))
+        {
+            isLoading = true;
+            clientMembership = await adminDBClient.GetMembershipByBarcode<Entities.ClientMemberships>(barcode);
+            if(clientMembership == null)
+            {
+                client = await adminDBClient.GetMembershipByBarcode<Entities.Clients>(barcode);
+                if(client == null)
+                {
+                    Message = "Barcode in invalid!";
+                    isLoading = false;
+                    return;
+                }
+                else
+                {
+                    clientMemberships = await adminDBClient.GetClientMembershipsByClientID(client.clientID);
+                    memberships = await adminDBClient.GetTable<Entities.Memberships>();
+                    membershipOrClient = false;
+                    isLoading = false;
+                    dataLoaded = true;
+                    return;
+                }
+                isLoading = false;
+                return;
+            }
+
+            else
+            {
+                membershipOrClient = true;
+                Message = "Yey! Successful!";
+                client = await adminDBClient.GetClientByID(clientMembership.clientID);
+                membership = await adminDBClient.GetMembershipsByID(clientMembership.membershipID);
+                isLoading = false;
+                dataLoaded = true;
+                return;
+            }
+             
+        }
+    }
+}

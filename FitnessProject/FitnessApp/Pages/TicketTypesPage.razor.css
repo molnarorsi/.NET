@@ -1,0 +1,65 @@
+﻿th {
+    font-size: 20px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    font-size: 20px;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+table {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: right;
+}
+
+.refresh-table {
+    margin-top: 50px;
+}
+
+.selected {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+.ticket-type-row {
+    cursor: pointer;
+}
+
+.submit {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.fade-in {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.alert {
+    border-radius: 10px;
+    width: max-content;
+    position: fixed;
+    top: 10px;
+}

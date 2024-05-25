@@ -1,0 +1,279 @@
+﻿@page "/ticketTypes"
+
+<PageTitle>Ticket Types</PageTitle>
+
+@using FitnessAppApi.Api
+@using FitnessAppApi.Context
+@using FitnessAppApi.Validator
+@using Microsoft.EntityFrameworkCore
+@using FitnessAppApi
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Web
+@using FluentValidation
+
+@inject IJSRuntime JSRuntime
+
+<AuthorizeView>
+    <Authorized>
+        @if (updateSuccess)
+        {
+            <div class="alert alert-success fade-in" role="alert" style="margin-left:@(loaded ? " 15%" : "0")">Updated successfully!</div>
+        }
+        else if (added)
+        {
+            <div class="alert alert-success fade-in" role="alert" style="margin-left:@(loaded ? " 15%" : "0")">Added successfully!</div>
+        }
+        @if (failed)
+        {
+            <div class="alert alert-danger fade-in" role="alert" style="margin-left:@(loaded ? " 15%" : "0")">Update failed!</div>
+        }
+        @if (loaded)
+        {
+            <div class="alert alert-success fade-in" role="alert">Loaded successfully!</div>
+        }
+        @if (refresh_clicked)
+        {
+            <div class="alert alert-info fade-in" role="alert" style="right: 10px">Loading...</div>
+        }
+
+        <h1>Memberships</h1>
+        <EditForm Model="@newTicketType" OnValidSubmit="@HandleValidSubmit" Context="editFormContext">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            
+            <div class="form-group">
+                <label for="Name">Name:</label>
+                <InputText class="form-control" id="Name" @bind-Value="newTicketType.Name" placeholder="Ticket name" />
+            </div>
+            <div class="form-group">
+                <label for="Price">Price:</label>
+                <InputNumber class="form-control" id="Price" @bind-Value="newTicketType.Price" />
+            </div>
+            <div class="form-group">
+                <label for="ValidityDays">Validity Days:</label>
+                <InputNumber class="form-control" id="ValidityDays" @bind-Value="newTicketType.ValidityDays" />
+            </div>
+            <div class="form-group">
+                <label for="ValidityEntries">Validity Entries:</label>
+                <InputNumber class="form-control" id="ValidityEntries" @bind-Value="newTicketType.ValidityEntries" />
+            </div>
+            <div class="form-group">
+                <label for="ArenaId">Arena Id:</label>
+                <InputNumber class="form-control" id="ArenaId" @bind-Value="newTicketType.ArenaId" />
+            </div>
+            <div class="form-group">
+                <label for="StartHour">Start Hour:</label>
+                <InputNumber class="form-control" id="StartHour" @bind-Value="newTicketType.StartHour" />
+            </div>
+            <div class="form-group">
+                <label for="EndHour">End Hour:</label>
+                <InputNumber class="form-control" id="EndHour" @bind-Value="newTicketType.EndHour" />
+            </div>
+            <div class="form-group">
+                <label for="EntriesPerDay">Entries Per Day:</label>
+                <InputNumber class="form-control" id="EntriesPerDay" @bind-Value="newTicketType.EntriesPerDay" />
+            </div>
+            @if (myValidator.Validate(newTicketType).IsValid)
+            {
+                <button class="btn btn-primary submit">@(
+                        itemSelected ? "Update" : "Submit"
+                )</button>
+            }
+            else
+            {
+                <button class="btn btn-primary submit" disabled>Submit</button>
+            }
+            
+            @if (itemSelected)
+            {
+                <button class="btn btn-danger submit" @onclick="async () => await HandleDelete()">Delete</button>
+            }
+        </EditForm>
+
+        <button class="refresh-table" @onclick="async () => await LoadTicketTypesAsync()">Refresh</button>
+        <table class="ticket_types_table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>ValidityDays</th>
+                    <th>ValidityEntries</th>
+                    <th>IsDeleted</th>
+                    <th>ArenaId</th>
+                    <th>StartHour</th>
+                    <th>EndHour</th>
+                    <th>EntriesPerDay</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var ticketType in ticketTypes)
+                {
+                    <tr @onclick="(() => HandleItemSelected(ticketType.TicketTypeId))"
+                        class="ticket-type-row @((itemSelected && selectedItemId == ticketType.TicketTypeId ? "selected" : ""))">
+                        <td>@ticketType.Name</td>
+                        <td>@ticketType.Price RON</td>
+                        <td>@ticketType.ValidityDays</td>
+                        <td>@ticketType.ValidityEntries</td>
+                        <td>@ticketType.IsDeleted</td>
+                        <td>@ticketType.ArenaId</td>
+                        <td>@ticketType.StartHour</td>
+                        <td>@ticketType.EndHour</td>
+                        <td>@ticketType.EntriesPerDay</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </Authorized>
+    <NotAuthorized>
+        <h2>Please log in to get permission for this page.</h2>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private InputValidator<TicketTypes> myValidator = new InputValidator<TicketTypes>();
+    private readonly AdminDbClient adminDbClient = new AdminDbClient(new MyDbContext());
+
+    private List<TicketTypes> ticketTypes = new List<TicketTypes>();
+
+    private TicketTypes newTicketType = new TicketTypes();
+
+    private bool itemSelected = false;
+    private int selectedItemId = -1;
+    private bool updateSuccess = false;
+    private bool failed = false;
+    private bool loaded = false;
+    private bool refresh_clicked = false;
+    private bool added = false;
+
+    private int addReturnValue = 0;
+    private int updateReturnValue = 0;
+    private int deleteReturnValue = 0;
+
+    private void HandleItemSelected(int ticketTypeId)
+    {
+        updateSuccess = false;
+        failed = false;
+        itemSelected = true;
+        selectedItemId = ticketTypeId;
+        newTicketType = ticketTypes.First(ticket => ticket.TicketTypeId == ticketTypeId);
+
+        if (newTicketType == null)
+        {
+            newTicketType = new TicketTypes();
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        updateSuccess = false;
+        failed = false;
+        using (var adminDbClient = new AdminDbClient(new MyDbContext()))
+        {
+            if (!itemSelected)
+            {
+                addReturnValue = await adminDbClient.AddEntity<TicketTypes>(newTicketType);
+
+                if (addReturnValue == 1)
+                {
+                    added = true;
+                }
+                else
+                {
+                    failed = true;
+                }
+            }
+            else
+            {
+                if (selectedItemId == -1)
+                {
+                    throw new ArgumentNullException();
+                }
+                updateReturnValue = await adminDbClient.UpdateEntity<TicketTypes>(selectedItemId, newTicketType);
+
+                if (updateReturnValue == 1)
+                {
+                    updateSuccess = true;
+                }
+                else
+                {
+                    failed = true;
+                }
+            }
+        }
+        await LoadTicketTypesAsync();
+        itemSelected = false;
+        newTicketType = new TicketTypes();
+    }
+
+    private async Task ClosePopup(int type)
+    {
+        StateHasChanged();
+        switch (type)
+        {
+            case 1:
+                await Task.Delay(2000);
+                updateSuccess = false;
+                loaded = false;
+                return;
+            case 2:
+                await Task.Delay(2000);
+                added = false;
+                loaded = false;
+                return;
+            case 3:
+                await Task.Delay(2000);
+                failed = false;
+                loaded = false;
+                return;
+            case 4:
+                await Task.Delay(2000);
+                updateSuccess = false;
+                added = false;
+                loaded = false;
+                return;
+            default:
+                return;
+        }
+    }
+
+    private async Task HandleDelete()
+    {
+        updateSuccess = false;
+        failed = false;
+        using (var adminDbClient = new AdminDbClient(new MyDbContext()))
+        {
+            deleteReturnValue = await adminDbClient.DeleteEntity<TicketTypes>(selectedItemId);      
+        }
+
+        await LoadTicketTypesAsync();
+        itemSelected = false;
+        newTicketType = new TicketTypes();
+        await ClosePopup(1);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadTicketTypesAsync();
+    }
+
+    private async Task LoadTicketTypesAsync()
+    {
+        refresh_clicked = true;
+        using (var adminDbClient = new AdminDbClient(new MyDbContext()))
+        {
+            int act_length = ticketTypes.Count();
+            bool empty = false;
+            if (act_length == 0)
+            {
+                empty = true;
+            }
+            ticketTypes = await adminDbClient.GetTable<TicketTypes>();
+            if (!empty || ticketTypes.Count() > act_length)
+            {
+                loaded = true;
+                refresh_clicked = false;
+                await ClosePopup(4);
+            }
+        }
+    }
+}

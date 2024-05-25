@@ -1,0 +1,47 @@
+﻿h1[b-wp9z9hh57r] {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+}
+
+th[b-wp9z9hh57r] {
+    font-size: 20px;
+    text-align: center;
+}
+
+td[b-wp9z9hh57r] {
+    padding: 10px;
+    font-size: 20px;
+}
+
+table[b-wp9z9hh57r], th[b-wp9z9hh57r], td[b-wp9z9hh57r] {
+    border: 1px solid;
+}
+
+table[b-wp9z9hh57r] {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: right;
+}
+
+.fade-in[b-wp9z9hh57r] {
+    animation: fadeIn-b-wp9z9hh57r 1s;
+}
+
+@keyframes fadeIn-b-wp9z9hh57r {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.alert[b-wp9z9hh57r] {
+    border-radius: 10px;
+    width: max-content;
+    position: fixed;
+    top: 10px;
+}

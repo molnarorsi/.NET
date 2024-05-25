@@ -1,0 +1,86 @@
+﻿@page "/login"
+@using FitnessApp.Data
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
+@inject Blazored.SessionStorage.ISessionStorageService sessionStorage
+@using System.Security.Claims
+
+
+<AuthorizeView Context="loginContext">
+    <NotAuthorized>
+        @if (Message != null)
+        {
+            <div class="alert alert-danger">@Message</div>
+        }
+
+        <EditForm Model="@user" OnInvalidSubmit="@ValidateUser">
+            
+                <div class="customWidth">
+
+                    <br /><br /><br /><br /><br />
+                </div>
+            
+
+            <div>
+                <h3 style="font-weight:bold; color:purple">Admin Login</h3>
+            </div>
+
+            <div>
+                <br />
+            </div>
+
+            <div class="row">
+                <input class="form-control" @bind="user.email" placeholder="Email" />
+            </div>
+
+            <br />
+
+            <div class="row">
+                <input type="password" class="form-control" @bind="user.password" placeholder="Password" />
+            </div>
+
+            <br />
+
+            <div class="row">
+                <span class="col-12"></span>
+                <input type="submit" class="form-control btn btn-primary" value="Login" />
+            </div>
+
+            <br />
+        </EditForm>
+    </NotAuthorized>
+    <Authorized>
+        <h3>Log out first to log in!</h3>
+    </Authorized>
+</AuthorizeView>
+
+@code {
+    private User user;
+    private string? Message;
+    ClaimsPrincipal claimsPrincipal;
+
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationState { get; set; }
+
+    protected override Task OnInitializedAsync()
+    {
+        user = new User();
+        return base.OnInitializedAsync();
+    }
+
+    private async Task<bool> ValidateUser()
+    {
+        if (user.email == "admin" && user.password == "admin")
+        {
+            ((AuthStateProvider)AuthenticationStateProvider).SetUserAuthenticated(user.email);
+            NavigationManager.NavigateTo("/auth");
+            await sessionStorage.SetItemAsync("email", user.email);
+            return await Task.FromResult(true);
+        }
+        else
+        {
+            Message = "Invalid Username or Password";
+            return await Task.FromResult(true);
+        }
+    }
+}

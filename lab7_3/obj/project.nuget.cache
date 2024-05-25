@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "TMHvCB3xO9I9tWu/IiFfFdiZq7QakN0GZ0dQ2iRCh5GeHUmYMuM3XQUD8EuD9N4auX8WFHt0FCQEmRlpy4m4JQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\molna\\source\\repos\\.NET\\lab7_3\\lab7_3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\molna\\.nuget\\packages\\materialdesigncolors\\3.0.0\\materialdesigncolors.3.0.0.nupkg.sha512",
+    "C:\\Users\\molna\\.nuget\\packages\\materialdesignthemes\\5.0.0\\materialdesignthemes.5.0.0.nupkg.sha512",
+    "C:\\Users\\molna\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": []
+}

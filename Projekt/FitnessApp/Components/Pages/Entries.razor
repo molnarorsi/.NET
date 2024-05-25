@@ -1,0 +1,99 @@
+﻿@page "/entries"
+
+<PageTitle>Entries</PageTitle>
+
+@using ClientAPI.API
+@using ClientAPI.Context
+@using ClientAPI.Validation
+@using Microsoft.EntityFrameworkCore
+@using ClientAPI
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Web
+@using static ClientAPI.API.Entities
+
+<AuthorizeView>
+    <Authorized>
+        <h1>Entries</h1>
+
+        @if (loaded)
+        {
+            <div class="alert alert-success fade-in" role="alert">Loaded successfully!</div>
+        }
+        @if (refresh_clicked)
+        {
+            <div class="alert alert-info fade-in" role="alert" style="right: 10px">Loading...</div>
+        }
+
+        <button class="refresh-table" @onclick="async () => await loadEntriesAsync()">Refresh</button>
+        <table class="client_tickets_table">
+            <thead>
+                <tr>
+                    <th>EntryID</th>
+                    <th>ClientID</th>
+                    <th>MembershipID</th>
+                    <th>Date</th>
+                    <th>Barcode</th>
+                    <th>FitnessID</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var entry in entries)
+                {
+                    <tr>
+                        <td>@entry.entriesID</td>
+                        <td>@entry.clientID</td>
+                        <td>@entry.membershipID</td>
+                        <td>@entry.date</td>
+                        <td>@entry.barcode</td>
+                        <td>@entry.fitnessID</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </Authorized>
+    <NotAuthorized>
+        <h2>Please log in!</h2>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private readonly AdminDBClient adminDBClient = new AdminDBClient(new MyDBContext());
+    private List<Entities.Entries> entries = new List<Entities.Entries>();
+
+    private bool refresh_clicked = false;
+    private bool loaded = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await loadEntriesAsync();
+    }
+
+    private async Task ClosePopup()
+    {
+        StateHasChanged();
+        await Task.Delay(2000);
+        loaded = false;
+    }
+
+
+    private async Task loadEntriesAsync()
+    {
+        refresh_clicked = true;
+        using (var adminDBClient = new AdminDBClient(new MyDBContext()))
+        {
+            int act_length = entries.Count();
+            bool empty = false;
+            if (act_length == 0)
+            {
+                empty = true;
+            }
+            entries = await adminDBClient.GetTable<Entities.Entries>();
+            if (!empty || entries.Count() > act_length)
+            {
+                loaded = true;
+                refresh_clicked = false;
+                await ClosePopup();
+            }
+        }
+    }
+}

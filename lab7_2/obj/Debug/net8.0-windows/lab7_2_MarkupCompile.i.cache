@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\molna\source\repos\lab7_2\obj\Debug\net8.0-windows\
+C:\Users\molna\source\repos\.NET\lab7_2\obj\Debug\net8.0-windows\
 lab7_2
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\molna\source\repos\lab7_2\App.xaml
-11407045341
+C:\Users\molna\source\repos\.NET\lab7_2\App.xaml
+2-821988731
 
 6223796882
 198915248976
-MainWindow.xaml;
+MainWindow.xaml;Resources\Styles\DictionaryStyle.xaml;
 
-False
+True
 

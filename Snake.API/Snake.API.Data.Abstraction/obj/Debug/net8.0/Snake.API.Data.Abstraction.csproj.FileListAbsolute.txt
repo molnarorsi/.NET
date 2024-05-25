@@ -1,0 +1,12 @@
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Data.Abstraction\bin\Debug\net8.0\Snake.API.Data.Abstraction.deps.json
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Data.Abstraction\bin\Debug\net8.0\Snake.API.Data.Abstraction.dll
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Data.Abstraction\bin\Debug\net8.0\Snake.API.Data.Abstraction.pdb
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Data.Abstraction\obj\Debug\net8.0\Snake.API.Data.Abstraction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Data.Abstraction\obj\Debug\net8.0\Snake.API.Data.Abstraction.AssemblyInfoInputs.cache
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Data.Abstraction\obj\Debug\net8.0\Snake.API.Data.Abstraction.AssemblyInfo.cs
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Data.Abstraction\obj\Debug\net8.0\Snake.API.Data.Abstraction.csproj.CoreCompileInputs.cache
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Data.Abstraction\obj\Debug\net8.0\Snake.API.Data.Abstraction.sourcelink.json
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Data.Abstraction\obj\Debug\net8.0\Snake.API.Data.Abstraction.dll
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Data.Abstraction\obj\Debug\net8.0\refint\Snake.API.Data.Abstraction.dll
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Data.Abstraction\obj\Debug\net8.0\Snake.API.Data.Abstraction.pdb
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Data.Abstraction\obj\Debug\net8.0\ref\Snake.API.Data.Abstraction.dll

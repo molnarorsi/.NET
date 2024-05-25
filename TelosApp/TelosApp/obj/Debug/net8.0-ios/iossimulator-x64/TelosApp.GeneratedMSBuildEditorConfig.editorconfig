@@ -1,0 +1,53 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TelosApp
+build_property.ProjectDir = D:\Anyagok\Sapientia\II felev\.Net\Lab 8 - Maui - Andorid vs IOS, IronPDF\Szemetes\SZT\TelosApp\TelosApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[D:/Anyagok/Sapientia/II felev/.Net/Lab 8 - Maui - Andorid vs IOS\, IronPDF/Szemetes/SZT/TelosApp/TelosApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelosApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/Anyagok/Sapientia/II felev/.Net/Lab 8 - Maui - Andorid vs IOS\, IronPDF/Szemetes/SZT/TelosApp/TelosApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelosApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/Anyagok/Sapientia/II felev/.Net/Lab 8 - Maui - Andorid vs IOS\, IronPDF/Szemetes/SZT/TelosApp/TelosApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelosApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/Anyagok/Sapientia/II felev/.Net/Lab 8 - Maui - Andorid vs IOS\, IronPDF/Szemetes/SZT/TelosApp/TelosApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelosApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/Anyagok/Sapientia/II felev/.Net/Lab 8 - Maui - Andorid vs IOS\, IronPDF/Szemetes/SZT/TelosApp/TelosApp/Views/ProductDetails.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelosApp.Views.ProductDetails.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProductDetails.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProductDetails.xaml
+
+[D:/Anyagok/Sapientia/II felev/.Net/Lab 8 - Maui - Andorid vs IOS\, IronPDF/Szemetes/SZT/TelosApp/TelosApp/Views/ProductList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelosApp.Views.ProductList.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProductList.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProductList.xaml

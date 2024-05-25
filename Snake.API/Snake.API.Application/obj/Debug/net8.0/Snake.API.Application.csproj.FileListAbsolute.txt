@@ -1,0 +1,13 @@
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Application\bin\Debug\net8.0\Snake.API.Application.deps.json
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Application\bin\Debug\net8.0\Snake.API.Application.dll
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Application\bin\Debug\net8.0\Snake.API.Application.pdb
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Application\obj\Debug\net8.0\Snake.API.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Application\obj\Debug\net8.0\Snake.API.Application.AssemblyInfoInputs.cache
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Application\obj\Debug\net8.0\Snake.API.Application.AssemblyInfo.cs
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Application\obj\Debug\net8.0\Snake.API.Application.csproj.CoreCompileInputs.cache
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Application\obj\Debug\net8.0\Snake.API.Application.sourcelink.json
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Application\obj\Debug\net8.0\Snake.API.Application.dll
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Application\obj\Debug\net8.0\refint\Snake.API.Application.dll
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Application\obj\Debug\net8.0\Snake.API.Application.pdb
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Application\obj\Debug\net8.0\ref\Snake.API.Application.dll
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Application\obj\Debug\net8.0\Snake.API.Application.csproj.AssemblyReference.cache

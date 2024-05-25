@@ -1,0 +1,256 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7A1FAE93-9D55-40BA-A886-5FF8D5471D59}|Snake.API.Repositories\\Snake.API.Repositories.csproj|c:\\users\\molna\\source\\repos\\.net\\snake.api\\snake.api.repositories\\snakerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A1FAE93-9D55-40BA-A886-5FF8D5471D59}|Snake.API.Repositories\\Snake.API.Repositories.csproj|solutionrelative:snake.api.repositories\\snakerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F7511A1-9DB8-4204-AF5D-5EF4F9E751F1}|Snake.API\\Snake.API.csproj|c:\\users\\molna\\source\\repos\\.net\\snake.api\\snake.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F7511A1-9DB8-4204-AF5D-5EF4F9E751F1}|Snake.API\\Snake.API.csproj|solutionrelative:snake.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71073011-1B77-42B2-91E3-5869008C20B1}|Snake.API.Data.MongoDB\\Snake.API.Data.MongoDB.csproj|c:\\users\\molna\\source\\repos\\.net\\snake.api\\snake.api.data.mongodb\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71073011-1B77-42B2-91E3-5869008C20B1}|Snake.API.Data.MongoDB\\Snake.API.Data.MongoDB.csproj|solutionrelative:snake.api.data.mongodb\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF09290A-45B3-44E5-85AA-782D60009BBD}|Snake.API.Data.Abstraction\\Snake.API.Data.Abstraction.csproj|c:\\users\\molna\\source\\repos\\.net\\snake.api\\snake.api.data.abstraction\\idatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF09290A-45B3-44E5-85AA-782D60009BBD}|Snake.API.Data.Abstraction\\Snake.API.Data.Abstraction.csproj|solutionrelative:snake.api.data.abstraction\\idatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5771D004-A609-468B-B16D-A06984CE8EBD}|Snake.API.Application\\Snake.API.Application.csproj|c:\\users\\molna\\source\\repos\\.net\\snake.api\\snake.api.application\\addsnake\\addsnakehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5771D004-A609-468B-B16D-A06984CE8EBD}|Snake.API.Application\\Snake.API.Application.csproj|solutionrelative:snake.api.application\\addsnake\\addsnakehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF09290A-45B3-44E5-85AA-782D60009BBD}|Snake.API.Data.Abstraction\\Snake.API.Data.Abstraction.csproj|c:\\users\\molna\\source\\repos\\.net\\snake.api\\snake.api.data.abstraction\\idatabaseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF09290A-45B3-44E5-85AA-782D60009BBD}|Snake.API.Data.Abstraction\\Snake.API.Data.Abstraction.csproj|solutionrelative:snake.api.data.abstraction\\idatabaseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71073011-1B77-42B2-91E3-5869008C20B1}|Snake.API.Data.MongoDB\\Snake.API.Data.MongoDB.csproj|c:\\users\\molna\\source\\repos\\.net\\snake.api\\snake.api.data.mongodb\\databaseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71073011-1B77-42B2-91E3-5869008C20B1}|Snake.API.Data.MongoDB\\Snake.API.Data.MongoDB.csproj|solutionrelative:snake.api.data.mongodb\\databaseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F7511A1-9DB8-4204-AF5D-5EF4F9E751F1}|Snake.API\\Snake.API.csproj|c:\\users\\molna\\source\\repos\\.net\\snake.api\\snake.api\\controllers\\snakecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F7511A1-9DB8-4204-AF5D-5EF4F9E751F1}|Snake.API\\Snake.API.csproj|solutionrelative:snake.api\\controllers\\snakecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5771D004-A609-468B-B16D-A06984CE8EBD}|Snake.API.Application\\Snake.API.Application.csproj|c:\\users\\molna\\source\\repos\\.net\\snake.api\\snake.api.application\\addsnake\\addsnakevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5771D004-A609-468B-B16D-A06984CE8EBD}|Snake.API.Application\\Snake.API.Application.csproj|solutionrelative:snake.api.application\\addsnake\\addsnakevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5771D004-A609-468B-B16D-A06984CE8EBD}|Snake.API.Application\\Snake.API.Application.csproj|c:\\users\\molna\\source\\repos\\.net\\snake.api\\snake.api.application\\addsnake\\addsnakeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5771D004-A609-468B-B16D-A06984CE8EBD}|Snake.API.Application\\Snake.API.Application.csproj|solutionrelative:snake.api.application\\addsnake\\addsnakeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5771D004-A609-468B-B16D-A06984CE8EBD}|Snake.API.Application\\Snake.API.Application.csproj|c:\\users\\molna\\source\\repos\\.net\\snake.api\\snake.api.application\\addsnake\\addsnakerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5771D004-A609-468B-B16D-A06984CE8EBD}|Snake.API.Application\\Snake.API.Application.csproj|solutionrelative:snake.api.application\\addsnake\\addsnakerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5153FEA0-5BC3-4451-8246-B68B2495BAA4}|Snake.API.Domain\\Snake.API.Domain.csproj|c:\\users\\molna\\source\\repos\\.net\\snake.api\\snake.api.domain\\snake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5153FEA0-5BC3-4451-8246-B68B2495BAA4}|Snake.API.Domain\\Snake.API.Domain.csproj|solutionrelative:snake.api.domain\\snake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5153FEA0-5BC3-4451-8246-B68B2495BAA4}|Snake.API.Domain\\Snake.API.Domain.csproj|c:\\users\\molna\\source\\repos\\.net\\snake.api\\snake.api.domain\\isnakerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5153FEA0-5BC3-4451-8246-B68B2495BAA4}|Snake.API.Domain\\Snake.API.Domain.csproj|solutionrelative:snake.api.domain\\isnakerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF09290A-45B3-44E5-85AA-782D60009BBD}|Snake.API.Data.Abstraction\\Snake.API.Data.Abstraction.csproj|c:\\users\\molna\\source\\repos\\.net\\snake.api\\snake.api.data.abstraction\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF09290A-45B3-44E5-85AA-782D60009BBD}|Snake.API.Data.Abstraction\\Snake.API.Data.Abstraction.csproj|solutionrelative:snake.api.data.abstraction\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.MongoDB\\Database.cs",
+              "RelativeDocumentMoniker": "Snake.API.Data.MongoDB\\Database.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.MongoDB\\Database.cs",
+              "RelativeToolTip": "Snake.API.Data.MongoDB\\Database.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAUwDIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T05:41:19.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DatabaseConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.MongoDB\\DatabaseConfiguration.cs",
+              "RelativeDocumentMoniker": "Snake.API.Data.MongoDB\\DatabaseConfiguration.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.MongoDB\\DatabaseConfiguration.cs",
+              "RelativeToolTip": "Snake.API.Data.MongoDB\\DatabaseConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T05:40:11.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IDatabaseConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.Abstraction\\IDatabaseConfiguration.cs",
+              "RelativeDocumentMoniker": "Snake.API.Data.Abstraction\\IDatabaseConfiguration.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.Abstraction\\IDatabaseConfiguration.cs",
+              "RelativeToolTip": "Snake.API.Data.Abstraction\\IDatabaseConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T05:34:24.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.Abstraction\\IDatabase.cs",
+              "RelativeDocumentMoniker": "Snake.API.Data.Abstraction\\IDatabase.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.Abstraction\\IDatabase.cs",
+              "RelativeToolTip": "Snake.API.Data.Abstraction\\IDatabase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T05:31:53.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddSnakeHandler.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Application\\AddSnake\\AddSnakeHandler.cs",
+              "RelativeDocumentMoniker": "Snake.API.Application\\AddSnake\\AddSnakeHandler.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Application\\AddSnake\\AddSnakeHandler.cs",
+              "RelativeToolTip": "Snake.API.Application\\AddSnake\\AddSnakeHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T05:17:02.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API\\Program.cs",
+              "RelativeDocumentMoniker": "Snake.API\\Program.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API\\Program.cs",
+              "RelativeToolTip": "Snake.API\\Program.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T05:29:11.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SnakeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Repositories\\SnakeRepository.cs",
+              "RelativeDocumentMoniker": "Snake.API.Repositories\\SnakeRepository.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Repositories\\SnakeRepository.cs",
+              "RelativeToolTip": "Snake.API.Repositories\\SnakeRepository.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAxwAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T05:53:18.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddSnakeValidator.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Application\\AddSnake\\AddSnakeValidator.cs",
+              "RelativeDocumentMoniker": "Snake.API.Application\\AddSnake\\AddSnakeValidator.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Application\\AddSnake\\AddSnakeValidator.cs",
+              "RelativeToolTip": "Snake.API.Application\\AddSnake\\AddSnakeValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T05:14:54.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddSnakeRequest.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Application\\AddSnake\\AddSnakeRequest.cs",
+              "RelativeDocumentMoniker": "Snake.API.Application\\AddSnake\\AddSnakeRequest.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Application\\AddSnake\\AddSnakeRequest.cs",
+              "RelativeToolTip": "Snake.API.Application\\AddSnake\\AddSnakeRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T05:12:14.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AddSnakeResponse.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Application\\AddSnake\\AddSnakeResponse.cs",
+              "RelativeDocumentMoniker": "Snake.API.Application\\AddSnake\\AddSnakeResponse.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Application\\AddSnake\\AddSnakeResponse.cs",
+              "RelativeToolTip": "Snake.API.Application\\AddSnake\\AddSnakeResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T05:10:35.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SnakeController.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API\\Controllers\\SnakeController.cs",
+              "RelativeDocumentMoniker": "Snake.API\\Controllers\\SnakeController.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API\\Controllers\\SnakeController.cs",
+              "RelativeToolTip": "Snake.API\\Controllers\\SnakeController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAYwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T06:39:43.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ISnakeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Domain\\ISnakeRepository.cs",
+              "RelativeDocumentMoniker": "Snake.API.Domain\\ISnakeRepository.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Domain\\ISnakeRepository.cs",
+              "RelativeToolTip": "Snake.API.Domain\\ISnakeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T05:53:58.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.Abstraction\\IRepository.cs",
+              "RelativeDocumentMoniker": "Snake.API.Data.Abstraction\\IRepository.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Data.Abstraction\\IRepository.cs",
+              "RelativeToolTip": "Snake.API.Data.Abstraction\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T05:47:19.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Snake.cs",
+              "DocumentMoniker": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Domain\\Snake.cs",
+              "RelativeDocumentMoniker": "Snake.API.Domain\\Snake.cs",
+              "ToolTip": "C:\\Users\\molna\\source\\repos\\.NET\\Snake.API\\Snake.API.Domain\\Snake.cs",
+              "RelativeToolTip": "Snake.API.Domain\\Snake.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T05:44:05.476Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

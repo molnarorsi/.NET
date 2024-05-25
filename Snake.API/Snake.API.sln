@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake.API", "Snake.API\Snake.API.csproj", "{9F7511A1-9DB8-4204-AF5D-5EF4F9E751F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake.API.Domain", "Snake.API.Domain\Snake.API.Domain.csproj", "{5153FEA0-5BC3-4451-8246-B68B2495BAA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake.API.Application", "Snake.API.Application\Snake.API.Application.csproj", "{5771D004-A609-468B-B16D-A06984CE8EBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake.API.Repositories", "Snake.API.Repositories\Snake.API.Repositories.csproj", "{7A1FAE93-9D55-40BA-A886-5FF8D5471D59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake.API.Data.Abstraction", "Snake.API.Data.Abstraction\Snake.API.Data.Abstraction.csproj", "{CF09290A-45B3-44E5-85AA-782D60009BBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake.API.Data.MongoDB", "Snake.API.Data.MongoDB\Snake.API.Data.MongoDB.csproj", "{71073011-1B77-42B2-91E3-5869008C20B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake.API.Tests", "Snake.API.Tests\Snake.API.Tests.csproj", "{0BEFB57B-ED53-46AB-AFDA-46A542C48DBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F7511A1-9DB8-4204-AF5D-5EF4F9E751F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F7511A1-9DB8-4204-AF5D-5EF4F9E751F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F7511A1-9DB8-4204-AF5D-5EF4F9E751F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F7511A1-9DB8-4204-AF5D-5EF4F9E751F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5153FEA0-5BC3-4451-8246-B68B2495BAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5153FEA0-5BC3-4451-8246-B68B2495BAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5153FEA0-5BC3-4451-8246-B68B2495BAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5153FEA0-5BC3-4451-8246-B68B2495BAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5771D004-A609-468B-B16D-A06984CE8EBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5771D004-A609-468B-B16D-A06984CE8EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5771D004-A609-468B-B16D-A06984CE8EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5771D004-A609-468B-B16D-A06984CE8EBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A1FAE93-9D55-40BA-A886-5FF8D5471D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A1FAE93-9D55-40BA-A886-5FF8D5471D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A1FAE93-9D55-40BA-A886-5FF8D5471D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A1FAE93-9D55-40BA-A886-5FF8D5471D59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF09290A-45B3-44E5-85AA-782D60009BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF09290A-45B3-44E5-85AA-782D60009BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF09290A-45B3-44E5-85AA-782D60009BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF09290A-45B3-44E5-85AA-782D60009BBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71073011-1B77-42B2-91E3-5869008C20B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71073011-1B77-42B2-91E3-5869008C20B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71073011-1B77-42B2-91E3-5869008C20B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71073011-1B77-42B2-91E3-5869008C20B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BEFB57B-ED53-46AB-AFDA-46A542C48DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BEFB57B-ED53-46AB-AFDA-46A542C48DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BEFB57B-ED53-46AB-AFDA-46A542C48DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BEFB57B-ED53-46AB-AFDA-46A542C48DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83363599-FE8D-4FE7-9A30-B94A67C21538}
+	EndGlobalSection
+EndGlobal

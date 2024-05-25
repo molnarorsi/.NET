@@ -1,0 +1,15 @@
+C:\Users\molna\source\repos\.NET\FitnessProject\FitnessAppApi\bin\Debug\net6.0\FitnessAppApi.deps.json
+C:\Users\molna\source\repos\.NET\FitnessProject\FitnessAppApi\bin\Debug\net6.0\FitnessAppApi.runtimeconfig.json
+C:\Users\molna\source\repos\.NET\FitnessProject\FitnessAppApi\bin\Debug\net6.0\FitnessAppApi.dll
+C:\Users\molna\source\repos\.NET\FitnessProject\FitnessAppApi\bin\Debug\net6.0\FitnessAppApi.pdb
+C:\Users\molna\source\repos\.NET\FitnessProject\FitnessAppApi\obj\Debug\net6.0\FitnessAppApi.csproj.AssemblyReference.cache
+C:\Users\molna\source\repos\.NET\FitnessProject\FitnessAppApi\obj\Debug\net6.0\FitnessAppApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\molna\source\repos\.NET\FitnessProject\FitnessAppApi\obj\Debug\net6.0\FitnessAppApi.AssemblyInfoInputs.cache
+C:\Users\molna\source\repos\.NET\FitnessProject\FitnessAppApi\obj\Debug\net6.0\FitnessAppApi.AssemblyInfo.cs
+C:\Users\molna\source\repos\.NET\FitnessProject\FitnessAppApi\obj\Debug\net6.0\FitnessAppApi.csproj.CoreCompileInputs.cache
+C:\Users\molna\source\repos\.NET\FitnessProject\FitnessAppApi\obj\Debug\net6.0\FitnessAppApi.sourcelink.json
+C:\Users\molna\source\repos\.NET\FitnessProject\FitnessAppApi\obj\Debug\net6.0\FitnessAppApi.dll
+C:\Users\molna\source\repos\.NET\FitnessProject\FitnessAppApi\obj\Debug\net6.0\refint\FitnessAppApi.dll
+C:\Users\molna\source\repos\.NET\FitnessProject\FitnessAppApi\obj\Debug\net6.0\FitnessAppApi.pdb
+C:\Users\molna\source\repos\.NET\FitnessProject\FitnessAppApi\obj\Debug\net6.0\FitnessAppApi.genruntimeconfig.cache
+C:\Users\molna\source\repos\.NET\FitnessProject\FitnessAppApi\obj\Debug\net6.0\ref\FitnessAppApi.dll

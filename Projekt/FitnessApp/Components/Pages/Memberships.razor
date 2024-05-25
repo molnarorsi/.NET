@@ -1,0 +1,282 @@
+﻿@page "/memberships"
+
+<PageTitle>Memberships</PageTitle>
+
+@using ClientAPI.API
+@using ClientAPI.Context
+@using ClientAPI.Validation
+@using Microsoft.EntityFrameworkCore
+@using ClientAPI
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Web
+@using FluentValidation
+@using Entities = ClientAPI.API.Entities
+
+@inject IJSRuntime JSRuntime
+
+<AuthorizeView>
+    <Authorized>
+
+    @if(updateSuccessful)
+    {
+        <div class="alert alert-success fade-in" role="alert" style="margin-left:@(loaded ? " 15%" : "0")">Updated successfully!</div>
+    }
+    else if (added)
+    {
+        <div class="alert alert-success fade-in" role="alert" style="margin-left:@(loaded ? " 15%" : "0")">Added successfully!</div>
+    }
+
+    @if(updateFailed)
+    {
+        <div class="alert alert-danger fade-in" role="alert" style="margin-left:@(loaded ? " 15%" : "0")">Update failed!</div>
+    }
+    @if (loaded)
+    {
+        <div class="alert alert-success fade-in" role="alert">Loaded successfully!</div>
+    }
+    @if (refresh_clicked)
+    {
+        <div class="alert alert-info fade-in" role="alert" style="right: 10px">Loading...</div>
+    }
+
+    <h1>Memberships</h1>
+    <EditForm Model="@newMembership" OnValidSubmit="@HandleValidSubmit" Context="editFormContext">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+                <div class="form-group">
+                    <label for="membershipName">Name</label>
+                    <InputText class="form-control" id="membershipName" @bind-Value="newMembership.membershipName" placeholder="Membership name" />
+                </div>
+
+                <div class="form-group">
+                    <label for="membershipPrice">Price</label>
+                    <InputNumber class="form-control" id="membershipPrice" @bind-Value="newMembership.membershipPrice" />
+                </div>
+
+                <div class="form-group">
+                    <label for="validityDays">Validity Days</label>
+                    <InputNumber class="form-control" id="validityDays" @bind-Value="newMembership.validityDays" />
+                </div>
+
+                <div class="form-group">
+                    <label for="validityEntries">Validity Entries</label>
+                    <InputNumber class="form-control" id="validityEntries" @bind-Value="newMembership.validityEntries" />
+                </div>
+
+                <div class="form-group">
+                    <label for="fitnessID">Fitness ID</label>
+                    <InputNumber class="form-control" id="fitnessID" @bind-Value="newMembership.fitnessID" />
+                </div>
+
+                <div class="form-group">
+                    <label for="fromHour">From(in hours)</label>
+                    <InputNumber class="form-control" id="fromHour" @bind-Value="newMembership.fromHour" />
+                </div>
+
+                <div class="form-group">
+                    <label for="toHour">To(in hours)</label>
+                    <InputNumber class="form-control" id="toHour" @bind-Value="newMembership.toHour" />
+                </div>
+
+                <div class="form-group">
+                    <label for="dailyEntriesNumber">Entries per day</label>
+                    <InputNumber class="form-control" id="dailyEntriesNumber" @bind-Value="newMembership.dailyEntriesNumber" />
+                </div>
+
+                @if (validationRules.Validate(newMembership).IsValid)
+                {
+                    <button class="btn btn-primary submit">@(
+                        itemSelected ? "Update" : "Submit"
+                    )</button>
+                }
+                else
+                {
+                    <button class="btn btn-primary submit" disabled>Submit</button>
+                }
+                @if (itemSelected)
+                {
+                    <button class="btn btn-danger submit" @onclick="async () => await HandleDelete()">Delete</button>
+                }
+            </EditForm>
+
+            <button class="refresh-table" @onclick="async () => await loadMembershipsAsync()">Refresh</button>
+        
+            <table class="memberships_table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Validity days</th>
+                        <th>Validity entries</th>
+                        <th>Is Deleted?</th>
+                        <th>Fitness ID</th>
+                        <th>From(hours)</th>
+                        <th>To(hours)</th>
+                        <th>How many entries per day?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var membership in memberships)
+                    {
+                        <tr @onclick="() => HandleItemSelected(membership.membershipID)"
+                            class="membership-row @((itemSelected && selectedItemID == membership.membershipID ? "selected" : ""))">
+                            >
+                            <td>@membership.membershipName</td>
+                            <td>@membership.membershipPrice RON</td>
+                            <td>@membership.validityDays</td>
+                            <td>@membership.validityEntries</td>
+                            <td>@membership.isDeleted</td>
+                            <td>@membership.fitnessID</td>
+                            <td>@membership.fromHour</td>
+                            <td>@membership.toHour</td>
+                            <td>@membership.dailyEntriesNumber</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </Authorized>
+    <NotAuthorized>
+        <h2>Please log in!</h2>
+    </NotAuthorized>
+</AuthorizeView>
+
+
+@code{
+    private Validator<Entities.Memberships> validationRules = new Validator<Entities.Memberships>();
+    private readonly AdminDBClient adminDBClient = new AdminDBClient(new MyDBContext());
+
+    private List<Entities.Memberships> memberships = new List<Entities.Memberships>();
+
+    private Entities.Memberships newMembership = new Entities.Memberships();
+
+    private bool itemSelected = false;
+    private int selectedItemID = -1;
+    private bool updateSuccessful = false;
+    private bool updateFailed = false;
+    private bool loaded = false;
+    private bool refresh_clicked = false;
+    private bool added = false;
+
+    private int addReturnValue = 0;
+    private int updateReturnValue = 0;
+    private int deleteReturnValue = 0;
+
+
+    private void HandleItemSelected(int membershipId)
+    {
+        updateSuccessful = false;
+        updateFailed = false;
+        itemSelected = true;
+        selectedItemID = membershipId;
+
+        newMembership = memberships.FirstOrDefault(membership => membership.membershipID == membershipId) ?? new Entities.Memberships();
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        updateSuccessful = false;
+        updateFailed = false;
+        using (var adminDBClient = new AdminDBClient(new MyDBContext()))
+        {
+            if (!itemSelected)
+            {
+                addReturnValue = await adminDBClient.AddEntity<Entities.Memberships>(newMembership);
+                if(addReturnValue == 1) {
+                    added = true;
+                }
+                else {
+                    updateFailed = true;
+                }
+            }
+            else
+            {
+                if(selectedItemID == -1)
+                {
+                    throw new ArgumentNullException();
+                }
+                updateReturnValue = await adminDBClient.UpdateEntity<Entities.Memberships>(selectedItemID, newMembership);
+
+                if(updateReturnValue == 1) {
+                    updateSuccessful = true;
+                }
+                else {
+                    updateFailed = true;
+                }
+            }
+
+        }
+
+        await loadMembershipsAsync();
+        itemSelected = false;
+        newMembership = new Entities.Memberships();
+
+
+    }
+
+    private async Task ClosePopup(int type)
+    {
+        StateHasChanged();
+        switch (type)
+        {
+            case 1:
+                await Task.Delay(2000);
+                updateSuccessful = false;
+                loaded = false;
+                return;
+            case 2:
+                await Task.Delay(2000);
+                added = false;
+                loaded = false;
+                return;
+            case 3:
+                await Task.Delay(2000);
+                updateFailed = false;
+                loaded = false;
+                return;
+            case 4:
+                await Task.Delay(2000);
+                updateSuccessful = false;
+                added = false;
+                loaded = false;
+                return;
+            default:
+                return;
+        }
+    }
+
+    private async Task HandleDelete() {
+        updateSuccessful = false;
+        updateFailed = false;
+        using (var adminDBClient = new AdminDBClient(new MyDBContext())) {
+            deleteReturnValue = await adminDBClient.DeleteEntity<Memberships>(selectedItemID);
+        }
+
+        await loadMembershipsAsync();
+        itemSelected = false;
+        newMembership = new Entities.Memberships();
+        await ClosePopup(1);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await loadMembershipsAsync();
+    }
+
+    private async Task loadMembershipsAsync()
+    {
+        refresh_clicked = true;
+        using (var adminDBClient = new AdminDBClient(new MyDBContext()))
+        {
+            int action_length = memberships.Count;
+            bool empty = false;
+            memberships = await adminDBClient.GetTable<Entities.Memberships>();
+            if (!empty && memberships.Count > action_length)
+            {
+                loaded = true;
+                refresh_clicked = false;
+                await ClosePopup(4);
+            }
+        }
+    }
+}

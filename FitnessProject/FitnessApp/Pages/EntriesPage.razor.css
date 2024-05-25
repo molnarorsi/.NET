@@ -1,0 +1,56 @@
+﻿body {
+}
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+}
+
+th {
+    font-size: 20px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    font-size: 20px;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+table {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: right;
+}
+
+.fade-in {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.alert {
+    border-radius: 10px;
+    width: max-content;
+    position: fixed;
+    top: 10px;
+}
+
+.icon {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    vertical-align: middle; /* Align the icon vertically with the text */
+    margin-right: 5px; /* Add some spacing between the icon and the text */
+}

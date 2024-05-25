@@ -1,0 +1,92 @@
+﻿@page "/"
+
+<PageTitle>My Profile</PageTitle>
+
+@using FitnessAppApi.Api
+@using FitnessAppApi.Context
+@using FitnessAppApi
+
+<h1>
+    <img src="/images/user.png" alt="User icon" class="icon" />
+    My Profile
+    </h1>
+<h3>Enter Barcode</h3>
+
+@if (Message != null)
+{
+    if (Message == "Success" || Message == "Access granted")
+    {
+        <div class="alert alert-success">@Message</div>
+    }
+    else
+    {
+        <div class="alert alert-danger">@Message</div>
+    }
+}
+
+<input type="text" @bind="clientBarcode" />
+
+<button class="btn btn-primary" @onclick="ValidateBarcodeAsync">Submit</button>
+
+@if (dataLoaded)
+{
+    <p>Name: @client.Name</p>
+    @if (tickets.Count != 0)
+    {
+        @foreach (var ticket in tickets)
+        {
+            <div class="card">
+                <p>Barcode: @ticket.Barcode</p>
+                <p>IssueDate: @ticket.IssueDate</p>
+                <p>Entries Remained: @ticket.NumOfEntries</p>
+                <p>IsValid: @ticket.Valid</p>
+                <p>Price: @ticket.BuyPrice</p>
+            </div>
+            <br />
+        }
+    }
+    else
+    {
+        <p>No tickets yet.</p>
+    }
+}
+
+@if (isLoading)
+{
+    <div>Loading...</div>
+}
+
+@code {
+    private void OnSelected(string selection)
+    {
+        Console.WriteLine(selection);
+    }
+    //private string selectedColor;
+    private string clientBarcode = "";
+    private List<ClientTickets> tickets = new List<ClientTickets>();
+    private Clients client = new Clients();
+    private string? Message;
+    private bool isLoading = false;
+    bool dataLoaded = false;
+
+    private async Task ValidateBarcodeAsync()
+    {
+        dataLoaded = false;
+        Message = null;
+        using (var adminDbClient = new AdminDbClient(new MyDbContext()))
+        {
+            isLoading = true;
+            client = await adminDbClient.GetByBarcode<Clients>(clientBarcode);
+            if (client == null)
+            {
+                Message = "Invalid barcode";
+                isLoading = false;
+                return;
+            }
+            Message = "Success";
+            tickets = await adminDbClient.GetClientTicketsByClientId(client.ClientId);
+            isLoading = false;
+            dataLoaded = true;
+        }
+    }
+}

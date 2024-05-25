@@ -1,0 +1,87 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FitnessApp
+build_property.RootNamespace = FitnessApp
+build_property.ProjectDir = C:\Users\molna\source\repos\.NET\Projekt\FitnessApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\molna\source\repos\.NET\Projekt\FitnessApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/molna/source/repos/.NET/Projekt/FitnessApp/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/molna/source/repos/.NET/Projekt/FitnessApp/Components/Layout/Dropdown.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcRHJvcGRvd24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/molna/source/repos/.NET/Projekt/FitnessApp/Components/Layout/DropdownList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcRHJvcGRvd25MaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/molna/source/repos/.NET/Projekt/FitnessApp/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/molna/source/repos/.NET/Projekt/FitnessApp/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/molna/source/repos/.NET/Projekt/FitnessApp/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/molna/source/repos/.NET/Projekt/FitnessApp/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-xqzugs3ar8
+
+[C:/Users/molna/source/repos/.NET/Projekt/FitnessApp/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-fy14mdpuzz
+
+[C:/Users/molna/source/repos/.NET/Projekt/FitnessApp/Components/Pages/Auth.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBdXRoLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-7snsnwhn23
+
+[C:/Users/molna/source/repos/.NET/Projekt/FitnessApp/Components/Pages/ClientMemberships.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRNZW1iZXJzaGlwcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-wp9z9hh57r
+
+[C:/Users/molna/source/repos/.NET/Projekt/FitnessApp/Components/Pages/Clients.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-rrm4ptnhud
+
+[C:/Users/molna/source/repos/.NET/Projekt/FitnessApp/Components/Pages/Entries.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFbnRyaWVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-gjd1su9fun
+
+[C:/Users/molna/source/repos/.NET/Projekt/FitnessApp/Components/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-19vkg5anz5
+
+[C:/Users/molna/source/repos/.NET/Projekt/FitnessApp/Components/Pages/Memberships.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNZW1iZXJzaGlwcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ki7w2ing1x
+
+[C:/Users/molna/source/repos/.NET/Projekt/FitnessApp/Components/Pages/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9maWxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-61o8msot0h

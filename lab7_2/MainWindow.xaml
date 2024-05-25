@@ -6,7 +6,53 @@
         xmlns:local="clr-namespace:lab7_2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
 
-    </Grid>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Resources/Styles/DictionaryStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <Border Style="{StaticResource BorderStyle}">
+                <TabControl>
+                    <TabItem Header="Name" IsSelected="True">
+                        <TextBlock>
+                            <Bold>Ez egy Boldolt szoveg, s csak ennyi.</Bold>
+                        </TextBlock>
+                    </TabItem>
+                    <TabItem Header="Image">
+
+                    </TabItem>
+                    <TabItem Header="Hotels">
+
+                    </TabItem>
+                    <TabItem Header="Contact Us">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="2*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Content="Name:"/>
+                            <TextBox Grid.Row="0" Grid.Column="1" x:Name="Name"/>
+                            
+                            <Label Grid.Row="1" Content="Email:"/>
+                            <TextBox Grid.Row="1" Grid.Column="1" x:Name="Email"/>
+
+                            <Button Grid.Row="2" Grid.Column="1" Content="OK"/>
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
 </Window>

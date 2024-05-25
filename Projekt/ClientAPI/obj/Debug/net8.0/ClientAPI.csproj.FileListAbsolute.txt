@@ -1,0 +1,15 @@
+C:\Users\molna\source\repos\.NET\Projekt\ClientAPI\bin\Debug\net8.0\ClientAPI.deps.json
+C:\Users\molna\source\repos\.NET\Projekt\ClientAPI\bin\Debug\net8.0\ClientAPI.runtimeconfig.json
+C:\Users\molna\source\repos\.NET\Projekt\ClientAPI\bin\Debug\net8.0\ClientAPI.dll
+C:\Users\molna\source\repos\.NET\Projekt\ClientAPI\bin\Debug\net8.0\ClientAPI.pdb
+C:\Users\molna\source\repos\.NET\Projekt\ClientAPI\obj\Debug\net8.0\ClientAPI.csproj.AssemblyReference.cache
+C:\Users\molna\source\repos\.NET\Projekt\ClientAPI\obj\Debug\net8.0\ClientAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\molna\source\repos\.NET\Projekt\ClientAPI\obj\Debug\net8.0\ClientAPI.AssemblyInfoInputs.cache
+C:\Users\molna\source\repos\.NET\Projekt\ClientAPI\obj\Debug\net8.0\ClientAPI.AssemblyInfo.cs
+C:\Users\molna\source\repos\.NET\Projekt\ClientAPI\obj\Debug\net8.0\ClientAPI.csproj.CoreCompileInputs.cache
+C:\Users\molna\source\repos\.NET\Projekt\ClientAPI\obj\Debug\net8.0\ClientAPI.sourcelink.json
+C:\Users\molna\source\repos\.NET\Projekt\ClientAPI\obj\Debug\net8.0\ClientAPI.dll
+C:\Users\molna\source\repos\.NET\Projekt\ClientAPI\obj\Debug\net8.0\refint\ClientAPI.dll
+C:\Users\molna\source\repos\.NET\Projekt\ClientAPI\obj\Debug\net8.0\ClientAPI.pdb
+C:\Users\molna\source\repos\.NET\Projekt\ClientAPI\obj\Debug\net8.0\ClientAPI.genruntimeconfig.cache
+C:\Users\molna\source\repos\.NET\Projekt\ClientAPI\obj\Debug\net8.0\ref\ClientAPI.dll

@@ -1,0 +1,109 @@
+﻿@page "/clientmemberships"
+
+<PageTitle>Client Memberships</PageTitle>
+
+@using ClientAPI.API
+@using ClientAPI.Context
+@using ClientAPI.Validation
+@using Microsoft.EntityFrameworkCore
+@using ClientAPI
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Web
+@using Entities = ClientAPI.API.Entities
+
+<h1>Client Memberships</h1>
+<AuthorizeView Context="clientmembershipContext">
+    <Authorized>
+        <h1> Client Memberships</h1>
+
+        @if (loaded)
+        {
+            <div class="alert alert-success fade-in" role="alert">Loaded successfully!</div>
+        }
+        @if (refresh_clicked)
+        {
+            <div class="alert alert-info fade-in" role="alert" style="right: 10px">Loading...</div>
+        }
+
+        <button class="refresh-table" @onclick="async () => await loadClientMembershipsAsync()">Refresh</button>
+        <table class="client_membership_table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>ClientID</th>
+                    <th>MembershipID</th>
+                    <th>BuyingDate</th>
+                    <th>Barcode</th>
+                    <th>NumOfEntries</th>
+                    <th>BuyPrice</th>
+                    <th>Valid</th>
+                    <th>FirstUsage</th>
+                    <th>FitnessID</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var clientMembership in clientMemberships)
+                {
+                    <tr>
+                        <td>@clientMembership.clientMembershipID</td>
+                        <td>@clientMembership.clientID</td>
+                        <td>@clientMembership.membershipID</td>
+                        <td>@clientMembership.buyingDate</td>
+                        <td>@clientMembership.barcode</td>
+                        <td>@clientMembership.nrOfEntries</td>
+                        <td>@clientMembership.price</td>
+                        <td>@clientMembership.isValid</td>
+                        <td>@clientMembership.firstUsage</td>
+                        <td>@clientMembership.fitnessID</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </Authorized>
+    <NotAuthorized>
+        <h2>Please log in!</h2>
+    </NotAuthorized>
+</AuthorizeView>
+
+
+@code {
+    private readonly AdminDBClient adminDBClient = new AdminDBClient(new MyDBContext());
+    private List<Entities.ClientMemberships> clientMemberships = new List<Entities.ClientMemberships>();
+
+    private bool refresh_clicked = false;
+    private bool loaded = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await loadClientMembershipsAsync();
+    }
+
+    private async Task ClosePopup()
+    {
+        StateHasChanged();
+        await Task.Delay(2000);
+        loaded = false;
+    }
+
+
+    private async Task loadClientMembershipsAsync()
+    {
+        refresh_clicked = true;
+        using (var adminDBClient = new AdminDBClient(new MyDBContext()))
+        {
+            int action_length = clientMemberships.Count();
+            bool empty = false;
+            if (action_length == 0)
+            {
+                empty = true;
+            }
+            clientMemberships = await adminDBClient.GetTable<Entities.ClientMemberships>();
+            if (!empty || clientMemberships.Count() > action_length)
+            {
+                loaded = true;
+                refresh_clicked = false;
+                await ClosePopup();
+            }
+        }
+    }
+}

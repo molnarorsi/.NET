@@ -1,0 +1,12 @@
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Repositories\bin\Debug\net8.0\Snake.API.Repositories.deps.json
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Repositories\bin\Debug\net8.0\Snake.API.Repositories.dll
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Repositories\bin\Debug\net8.0\Snake.API.Repositories.pdb
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Repositories\obj\Debug\net8.0\Snake.API.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Repositories\obj\Debug\net8.0\Snake.API.Repositories.AssemblyInfoInputs.cache
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Repositories\obj\Debug\net8.0\Snake.API.Repositories.AssemblyInfo.cs
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Repositories\obj\Debug\net8.0\Snake.API.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Repositories\obj\Debug\net8.0\Snake.API.Repositories.sourcelink.json
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Repositories\obj\Debug\net8.0\Snake.API.Repositories.dll
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Repositories\obj\Debug\net8.0\refint\Snake.API.Repositories.dll
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Repositories\obj\Debug\net8.0\Snake.API.Repositories.pdb
+C:\Users\molna\source\repos\.NET\Snake.API\Snake.API.Repositories\obj\Debug\net8.0\ref\Snake.API.Repositories.dll

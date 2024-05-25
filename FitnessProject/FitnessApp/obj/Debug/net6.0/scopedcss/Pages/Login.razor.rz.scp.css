@@ -1,0 +1,14 @@
+.custWidth[b-bv6ypt54pc] {
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Ensure the container takes full viewport height */
+}
+
+.icon[b-bv6ypt54pc] {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    vertical-align: middle; /* Align the icon vertically with the text */
+    margin-right: 5px; /* Add some spacing between the icon and the text */
+}

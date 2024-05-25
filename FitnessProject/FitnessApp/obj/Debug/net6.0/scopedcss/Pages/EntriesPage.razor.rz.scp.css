@@ -1,0 +1,56 @@
+body[b-xvtqlj7ndd] {
+}
+h1[b-xvtqlj7ndd] {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+}
+
+th[b-xvtqlj7ndd] {
+    font-size: 20px;
+    text-align: center;
+}
+
+td[b-xvtqlj7ndd] {
+    padding: 10px;
+    font-size: 20px;
+}
+
+table[b-xvtqlj7ndd], th[b-xvtqlj7ndd], td[b-xvtqlj7ndd] {
+    border: 1px solid;
+}
+
+table[b-xvtqlj7ndd] {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: right;
+}
+
+.fade-in[b-xvtqlj7ndd] {
+    animation: fadeIn-b-xvtqlj7ndd 1s;
+}
+
+@keyframes fadeIn-b-xvtqlj7ndd {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.alert[b-xvtqlj7ndd] {
+    border-radius: 10px;
+    width: max-content;
+    position: fixed;
+    top: 10px;
+}
+
+.icon[b-xvtqlj7ndd] {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    vertical-align: middle; /* Align the icon vertically with the text */
+    margin-right: 5px; /* Add some spacing between the icon and the text */
+}

@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\molna\\source\\repos\\.NET\\Projekt\\FitnessApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FitnessApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FitnessApp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\molna\\source\\repos\\.NET\\Projekt\\FitnessApp\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\molna\\source\\repos\\.NET\\Projekt\\FitnessApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\molna\\source\\repos\\.NET\\Projekt\\FitnessApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\molna\\source\\repos\\.NET\\Projekt\\FitnessApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\molna\\source\\repos\\.NET\\Projekt\\FitnessApp\\wwwroot\\js\\export.js",
+      "PackagePath": "staticwebassets\\js\\export.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FitnessApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FitnessApp.props",
+      "PackagePath": "build\\FitnessApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FitnessApp.props",
+      "PackagePath": "buildMultiTargeting\\FitnessApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FitnessApp.props",
+      "PackagePath": "buildTransitive\\FitnessApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
